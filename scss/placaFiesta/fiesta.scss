@@ -1,0 +1,65 @@
+.main__fiesta {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 0.4fr 1fr 0.4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "banda1 img__fiesta img__fiesta"
+    "banda1 banda2 banda2"
+    "img__fiesta2 img__fiesta2 banda3";
+  height: 50rem;
+}
+
+.banda1 {
+  grid-area: banda1;
+  background-color: #fcca46;
+}
+
+.banda2 {
+  grid-area: banda2;
+  background-color: #fcca46;
+  padding-top: 6rem;
+  font-size: xx-large;
+}
+
+.banda3 {
+  grid-area: banda3;
+  background-color: #fcca46;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.img__fiesta {
+  grid-area: img__fiesta;
+  background-color: #87d68d;
+}
+
+.img__fiesta2 {
+  grid-area: img__fiesta2;
+  background-color: #87d68d;
+}
+
+.animate__fadeInDownBig {
+  text-align: center;
+  padding-right: 8rem;
+  font-size: 6rem;
+}
+
+@media (max-width: 768px) {
+  .animate__fadeInDownBig {
+    font-size: 4rem;
+  }
+
+  .banda3 a {
+    padding: 7px 7px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fiesta__recreativa {
+    font-size: 3rem;
+  }
+}

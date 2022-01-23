@@ -1,0 +1,136 @@
+.main__elige--op3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1.1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img img"
+    "texto glosario"
+    "botones glosario";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+
+  .glosario--op3 {
+    grid-area: glosario;
+    background-color: #87d68d;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+
+    .glosario__estructura--op2 {
+      .glosario__div--op2 {
+        margin-top: 7rem;
+      }
+    }
+  }
+
+  .img__elige--op3 {
+    grid-area: img;
+
+    .img__elige--img3 {
+      width: 100vw;
+      height: 40rem;
+    }
+  }
+
+  .div__elige--op3 {
+    padding-bottom: 6rem;
+    grid-area: botones;
+
+    .botonera__elige--op3 {
+      display: flex;
+      flex-direction: column;
+
+      .boton__elige {
+        text-align: center;
+        width: 20rem;
+        height: 20vh;
+        margin: 0.8rem;
+      }
+    }
+  }
+
+  .texto__elige--op3 {
+    grid-area: texto;
+    align-self: center;
+    text-align: center;
+    font-size: x-large;
+    padding-right: 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .main__elige--op3 {
+    grid-template-columns: 5fr;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr 0.5fr;
+    gap: 50px 0px;
+    grid-template-areas:
+      "img"
+      "texto"
+      "glosario"
+      "botones";
+    align-content: stretch;
+
+    .glosario--op3 {
+
+      .glosario__estructura--op2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .glosario__div--op2 {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .img__elige--op3 {
+      .img__elige--img3 {
+        height: 25rem;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .main__elige--op3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.5fr 0.5fr;
+    gap: 50px 0px;
+    grid-template-areas:
+      "img"
+      "texto"
+      "glosario"
+      "botones";
+
+    .img__elige--op3 {
+      .img__elige--img3 {
+        width: 100vw;
+        height: 17rem;
+      }
+    }
+
+    .glosario--op3 {
+      width: 100vw;
+    }
+
+    .div__elige--op3 {
+      padding-bottom: 2rem;
+    }
+
+    .texto__elige--op3 {
+      padding-right: 0rem;
+    }
+  }
+}

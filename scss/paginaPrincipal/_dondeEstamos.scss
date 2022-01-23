@@ -1,0 +1,45 @@
+.main__dondeestamos {
+  grid-area: main__dondeestamos;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: xx-large;
+  margin-bottom: 6rem;
+
+  .dondeestamos__h2 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+
+  #iframe__dondeestamos {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__dondeestamos {
+    #iframe__dondeestamos {
+      height: 80vh;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main__dondeestamos {
+    font-size: 3rem;
+    width: 100vw;
+    margin-bottom: 0;
+
+
+    .main__dondeestamos h2 {
+      font-size: 3rem;
+    }
+
+    .main__dondeestamos iframe {
+      width: 80vw;
+      height: 60vh;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.main__elige--op2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr 1.2fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img img"
+    "glosario texto"
+    "glosario botones";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+
+  .glosario--op2 {
+    grid-area: glosario;
+    background-color: #87d68d;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+
+    .glosario__estructura--op2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .glosario__div--op2 {
+        margin-top: 7rem;
+      }
+    }
+  }
+
+  .img__elige--op2 {
+    grid-area: img;
+
+    .img__elige--img2 {
+      width: 100vw;
+      height: 35rem;
+    }
+  }
+
+  .div__elige--op2 {
+    padding-bottom: 6rem;
+    grid-area: botones;
+
+    .botonera__elige--op2 {
+      display: flex;
+      flex-direction: column;
+
+      .boton__elige {
+        text-align: center;
+        width: 20rem;
+        height: 20vh;
+        margin: 0.8rem;
+      }
+    }
+  }
+
+  .texto__elige--op2 {
+    grid-area: texto;
+    align-self: center;
+    text-align: center;
+    font-size: x-large;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__elige--op2 {
+    grid-template-columns: 5fr;
+    grid-template-rows: 0.6fr 0.4fr 0.2fr 0.5fr;
+    gap: 50px 0px;
+    grid-template-areas:
+      "img"
+      "texto"
+      "glosario"
+      "botones";
+    align-content: flex-start;
+
+    .img__elige--op2 {
+      .img__elige--img2 {
+        height: 25rem;
+      }
+    }
+
+    .glosario--op2 {
+      width: 100vw;
+      padding-bottom: 2rem;
+
+      .glosario__estructura--op2 {
+        display: flex;
+        flex-direction: row;
+
+        .glosario__div--op2 {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .div__elige--op2 {
+      padding-bottom: 0rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main__elige--op2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.6fr 1fr;
+    gap: 50px 0px;
+    grid-template-areas:
+      "img"
+      "glosario"
+      "texto"
+      "glosario"
+      "botones";
+    justify-content: stretch;
+    align-items: stretch;
+
+    .glosario__estructura--op2 {
+      font-size: medium;
+    }
+
+    .img__elige--op2 {
+      .img__elige--img2 {
+        height: 13rem;
+      }
+    }
+
+    .div__elige--op2 {
+      .botonera__elige--op2 {
+        margin-bottom: 2rem;
+
+        .boton__elige {
+          width: 60vw;
+          margin-left: 0.2rem;
+        }
+      }
+    }
+
+    .texto__elige--op2 {
+      padding-right: 0rem;
+      font-size: larger;
+    }
+  }
+}

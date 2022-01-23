@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.g-3,
+.gy-3 {
+  --bs-gutter-y: 0;
+}
+
+.g-3,
+.gx-3 {
+  --bs-gutter-x: 0;
+}
+
+ol,
+ul {
+  padding-left: 0rem;
+}
+
+.body {
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.fuentes {
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.fuentes__titulos {
+ font-family: "Carter One", cursive;
+}
+
+.resaltador {
+  color: $naranjaOscuro;
+}
+
+.resaltador__dos {
+  color: $verde;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  color: black;
+  background-color: #fe7f2d;
+  border-color: #fe7f2d;
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: large;
+}
+
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: black;
+  background-color: #fe7f2d;
+  border-color: #fe7f2d;
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  color: black;
+  background-color: #fe7f2d;
+  border-color: #fe7f2d;
+  box-shadow: none;
+  font-size: larger;
+}
+
+input {
+  width: 15rem;
+  height: 2rem;
+  font-size: large;
+}
+
+#fiestaDeInteres {
+  width: 12rem;
+  height: 1.5rem;
+  font-size: large;
+}
+.nav-link:focus,
+.nav-link:hover,
+.nav-link {
+  color: black;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-primary:hover {
+    font-size: medium;
+  }
+
+  .h5 {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-primary,
+  .btn-primary:hover {
+    font-size: small;
+  }
+}

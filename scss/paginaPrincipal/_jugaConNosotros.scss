@@ -1,0 +1,91 @@
+.main__jugaconnosotros {
+  grid-area: main__jugaconnosotros;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: $verde;
+
+  .texto__jugaconnosotros {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    background-color: $verde;
+    text-align: center;
+    padding-top: 5rem;
+    color: white;
+    font-size: x-large;
+    padding-top: 8rem;
+    margin-bottom: 0rem;
+
+    .texto__jugaconnosotros h2 {
+      font-size: 3rem;
+    }
+
+    .boton__juga {
+      padding-top: 3rem;
+      margin-bottom: 5vh;
+    }
+  }
+
+  .div__img--jugaconnosotros {
+    height: 41rem;
+
+    .jugaconnosotros__img {
+      width: 50vw;
+      height: 41rem;
+      min-height: 41rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main__jugaconnosotros {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .texto__jugaconnosotros {
+      padding-right: 5rem;
+      padding-left: 5rem;
+      padding-top: 6rem;
+      font-size: x-large;
+
+      .texto__jugaconnosotros h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .div__img--jugaconnosotros {
+      height: 38rem;
+
+      .jugaconnosotros__img {
+        width: 100vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main__jugaconnosotros {
+    text-align: initial;
+    justify-content: center;
+    height: 35rem;
+
+    .div__img--jugaconnosotros {
+      height: 5rem;
+
+      .jugaconnosotros__img {
+        display: none;
+      }
+    }
+
+    .texto__jugaconnosotros {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-top: 6rem;
+      font-size: 1.2rem;
+
+      .texto__jugaconnosotros h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

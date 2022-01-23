@@ -1,0 +1,39 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.4fr 0.4fr 0.6fr;
+  gap: 250px 0px;
+  grid-template-areas:
+    "index__presentacion"
+    "main__quienessomos"
+    "main__nuestrasfiestas"
+    "main__jugaconnosotros"
+    "main__contactanos"
+    "main__dondeestamos";
+
+  .carousel-caption {
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.3fr 0.1fr 0.1fr;
+    gap: 150px 0px;
+
+    .carousel-caption {
+      padding-bottom: 10%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    grid-template-rows: 0fr 0.2fr 1fr 0.1fr 0.2fr 0.2fr;
+    gap: 100px 0px;
+
+    .carousel-caption {
+      padding-bottom: 0%;
+    }
+  }
+}

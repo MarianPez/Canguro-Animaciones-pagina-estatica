@@ -1,0 +1,1014 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0rem; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: black; }
+
+li {
+  list-style: none; }
+
+p {
+  margin-bottom: 0;
+  line-height: 1.2; }
+
+.g-3,
+.gy-3 {
+  --bs-gutter-y: 0; }
+
+.g-3,
+.gx-3 {
+  --bs-gutter-x: 0; }
+
+ol,
+ul {
+  padding-left: 0rem; }
+
+.body {
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder; }
+
+.fuentes {
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder; }
+
+.fuentes__titulos {
+  font-family: "Carter One", cursive; }
+
+.resaltador {
+  color: #fe7f2d; }
+
+.resaltador__dos {
+  color: #87d68d; }
+
+.logo {
+  width: 6rem; }
+
+.btn-primary,
+.btn-primary:hover {
+  color: black;
+  background-color: #fe7f2d;
+  border-color: #fe7f2d;
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: large; }
+
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none; }
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: black;
+  background-color: #fe7f2d;
+  border-color: #fe7f2d;
+  box-shadow: none; }
+
+.btn-primary:active {
+  color: black;
+  background-color: #fe7f2d;
+  border-color: #fe7f2d;
+  box-shadow: none;
+  font-size: larger; }
+
+input {
+  width: 15rem;
+  height: 2rem;
+  font-size: large; }
+
+#fiestaDeInteres {
+  width: 12rem;
+  height: 1.5rem;
+  font-size: large; }
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link {
+  color: black;
+  font-size: x-large; }
+
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-primary:hover {
+    font-size: medium; }
+  .h5 {
+    font-size: medium; } }
+
+@media (max-width: 480px) {
+  .btn-primary,
+  .btn-primary:hover {
+    font-size: small; } }
+
+.portada {
+  display: grid;
+  grid-template-columns: 0.1fr 1.4fr 1.6fr 1.4fr 0.1fr;
+  grid-template-rows: 0.1fr 1.6fr 1.2fr 1.6fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "borde-superior borde-superior borde-superior borde-superior der-borde" "izq-borde izq-arriba izq-arriba der-arriba der-borde" "izq-borde izq-abajo centro der-arriba der-borde" "izq-borde izq-abajo der-abajo der-abajo der-borde" "izq-borde borde-inferior borde-inferior borde-inferior borde-inferior";
+  width: 100vw;
+  height: 100vh; }
+  .portada .izq-arriba {
+    grid-area: izq-arriba;
+    border: solid 2px;
+    background-color: #87d68d;
+    font-size: 3rem;
+    text-align: center; }
+    .portada .izq-arriba:hover {
+      transform: scale(1.2) translate(60px);
+      font-size: 5rem;
+      transition-duration: 0.1s;
+      padding-top: 2rem; }
+  .portada .der-arriba {
+    grid-area: der-arriba;
+    border: solid 2px;
+    background-color: #87d68d;
+    font-size: 3rem;
+    text-align: center; }
+    .portada .der-arriba:hover {
+      transform: scale(1.1) translate(-15px);
+      font-size: 5rem;
+      padding-top: 5rem;
+      transition-duration: 0.1s; }
+  .portada .centro {
+    grid-area: centro;
+    border: solid 2px; }
+    .portada .centro:hover {
+      width: 50vw;
+      height: 50vh;
+      transition-duration: 0.1s; }
+    .portada .centro .logo__portada {
+      width: 100%;
+      height: 100%; }
+  .portada .izq-abajo {
+    grid-area: izq-abajo;
+    border: solid 2px;
+    background-color: #87d68d;
+    font-size: 3rem;
+    text-align: center; }
+    .portada .izq-abajo:hover {
+      transform: scale(1.1) translate(15px);
+      font-size: 5rem;
+      padding-top: 5rem;
+      transition-duration: 0.1s; }
+  .portada .der-abajo {
+    grid-area: der-abajo;
+    border: solid 2px;
+    background-color: #87d68d;
+    font-size: 3rem;
+    text-align: center; }
+    .portada .der-abajo:hover {
+      transform: scale(1.2) translate(-60px);
+      transition-duration: 0.1s;
+      font-size: 5rem;
+      padding-top: 2rem; }
+
+.der-borde {
+  grid-area: der-borde;
+  border: solid 2px;
+  background-color: #fe7f2d;
+  writing-mode: vertical-lr; }
+
+.borde-superior {
+  grid-area: borde-superior;
+  border: solid 2px;
+  background-color: #fe7f2d; }
+
+.izq-borde {
+  grid-area: izq-borde;
+  border: solid 2px;
+  background-color: #fe7f2d;
+  writing-mode: vertical-lr; }
+
+.borde-inferior {
+  grid-area: borde-inferior;
+  border: solid 2px;
+  background-color: #fe7f2d; }
+
+@media (max-width: 768px) {
+  .portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fe7f2d;
+    width: 100vw;
+    height: 100vh; }
+    .portada .der-borde,
+    .portada .izq-borde,
+    .portada .borde-inferior,
+    .portada .borde-superior {
+      display: none; }
+    .portada .izq-arriba {
+      font-size: xx-large;
+      text-align: center;
+      width: 100vw; }
+      .portada .izq-arriba:hover {
+        transform: scale(1) translate(0px);
+        font-size: xx-large;
+        transition-duration: 0s;
+        padding-top: 0rem; }
+    .portada .der-arriba {
+      font-size: xx-large;
+      text-align: center;
+      width: 100vw; }
+      .portada .der-arriba:hover {
+        transform: scale(1) translate(0);
+        font-size: xx-large;
+        padding-top: 0rem;
+        transition-duration: 0.1s; }
+    .portada .izq-abajo {
+      font-size: xx-large;
+      text-align: center;
+      width: 100vw; }
+      .portada .izq-abajo:hover {
+        transform: scale(1) translate(0);
+        font-size: xx-large;
+        padding-top: 0rem;
+        transition-duration: 0.1s; }
+    .portada .der-abajo {
+      font-size: xx-large;
+      text-align: center;
+      width: 100vw; }
+      .portada .der-abajo:hover {
+        transform: scale(1) translate(0);
+        transition-duration: 0.1s;
+        font-size: xx-large;
+        padding-top: 0rem; }
+    .portada .centro {
+      width: 100vw; }
+      .portada .centro:hover {
+        width: auto;
+        height: auto;
+        transition-duration: 0.1s; }
+      .portada .centro .logo__portada {
+        width: 100%;
+        height: 100%; } }
+
+.header__bootstrap {
+  background-color: #fcca46; }
+
+.header {
+  background-color: #fcca46;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header nav {
+    font-size: 1.4rem;
+    padding-right: 1rem; }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding-left: 0vw;
+    height: 12rem; }
+    .header .header nav {
+      font-size: 3vw;
+      padding-right: 0rem; } }
+
+@media (max-width: 480px) {
+  .header {
+    height: 9rem; }
+  .logo {
+    width: 4rem;
+    padding-top: 1rem; } }
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.4fr 0.4fr 0.6fr;
+  gap: 250px 0px;
+  grid-template-areas: "index__presentacion" "main__quienessomos" "main__nuestrasfiestas" "main__jugaconnosotros" "main__contactanos" "main__dondeestamos"; }
+  .main .carousel-caption {
+    padding-bottom: 20%; }
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.3fr 0.1fr 0.1fr;
+    gap: 150px 0px; }
+    .main .carousel-caption {
+      padding-bottom: 10%; } }
+
+@media (max-width: 480px) {
+  .main {
+    grid-template-rows: 0fr 0.2fr 1fr 0.1fr 0.2fr 0.2fr;
+    gap: 100px 0px; }
+    .main .carousel-caption {
+      padding-bottom: 0%; } }
+
+.main__quienessomos {
+  display: flex;
+  grid-area: main__quienessomos; }
+  .main__quienessomos .quienessomos__div {
+    height: 34rem; }
+    .main__quienessomos .quienessomos__div .iframe__quienessomos {
+      height: 34rem;
+      width: 40vw; }
+  .main__quienessomos .quienessomos__texto {
+    padding-right: 4.375rem;
+    padding-left: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+    padding-bottom: 1rem;
+    background-color: #87d68d; }
+    .main__quienessomos .quienessomos__texto .quienessomos__h2 {
+      font-size: 3rem;
+      padding-bottom: 2rem; }
+    .main__quienessomos .quienessomos__texto .quienessomos__parrafo {
+      font-size: large; }
+
+@media (max-width: 768px) {
+  .main__quienessomos {
+    flex-direction: column-reverse; }
+    .main__quienessomos .quienessomos__texto {
+      padding-top: 4rem;
+      font-size: larger;
+      padding-bottom: 2rem; }
+      .main__quienessomos .quienessomos__texto .quienessomos__texto h2 {
+        font-size: 4rem; }
+      .main__quienessomos .quienessomos__texto .quienessomos__texto .resaltador {
+        font-size: 10rem;
+        font-size: 1.4rem; }
+      .main__quienessomos .quienessomos__texto .quienessomos__parrafo {
+        font-size: medium; }
+    .main__quienessomos .quienessomos__div .iframe__quienessomos {
+      width: 100vw; } }
+
+@media (max-width: 480px) {
+  .main__quienessomos .quienessomos__texto {
+    padding-top: 4rem;
+    font-size: large;
+    padding-right: 2rem;
+    padding-left: 2rem; }
+    .main__quienessomos .quienessomos__texto .quienessomos__texto h2 {
+      font-size: 3rem;
+      padding-bottom: 0; }
+    .main__quienessomos .quienessomos__texto .quienessomos__texto .resaltador {
+      font-size: 2rem; }
+    .main__quienessomos .quienessomos__texto .quienessomos__parrafo {
+      font-size: small; }
+  .main__quienessomos .quienessomos__div {
+    height: 17rem; }
+    .main__quienessomos .quienessomos__div .iframe__quienessomos {
+      height: 17rem; } }
+
+.main__nuestrasfiestas {
+  text-align: center;
+  grid-area: main__nuestrasfiestas; }
+  .main__nuestrasfiestas .nuestrasfiestas__titulo {
+    font-size: 5rem; }
+  .main__nuestrasfiestas .nuestrasfiestas--display__flex {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0px 1rem; }
+    .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
+      background-color: #87d68d;
+      color: black;
+      margin-top: 5rem;
+      border: solid 0.1rem black;
+      border-radius: 6px;
+      width: 25vw;
+      height: 80vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-size: larger; }
+      .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
+        width: 15vw; }
+      .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .titulos__nuestrasfiestas {
+        font-size: x-large; }
+      .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div:hover {
+        background-color: #fcca46;
+        box-shadow: -4px 3px 5px 0px rgba(156, 156, 156, 0.75);
+        -webkit-box-shadow: -4px 3px 5px 0px rgba(156, 156, 156, 0.75);
+        -moz-box-shadow: -4px 3px 5px 0px rgba(156, 156, 156, 0.75); }
+
+@media (max-width: 768px) {
+  .main__nuestrasfiestas .nuestrasfiestas--display__flex {
+    flex-direction: column; }
+    .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
+      width: 80vw;
+      height: 100vh; }
+      .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
+        width: 40vw; } }
+
+@media (max-width: 480px) {
+  .main__nuestrasfiestas .nuestrasfiestas__titulo {
+    font-size: 3rem; }
+  .main__nuestrasfiestas .nuestrasfiestas--display__flex {
+    flex-direction: column; }
+    .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
+      width: 80vw;
+      height: 70vh;
+      font-size: medium; }
+      .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
+        width: 50vw; } }
+
+.main__jugaconnosotros {
+  grid-area: main__jugaconnosotros;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #87d68d; }
+  .main__jugaconnosotros .texto__jugaconnosotros {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    background-color: #87d68d;
+    text-align: center;
+    padding-top: 5rem;
+    color: white;
+    font-size: x-large;
+    padding-top: 8rem;
+    margin-bottom: 0rem; }
+    .main__jugaconnosotros .texto__jugaconnosotros .texto__jugaconnosotros h2 {
+      font-size: 3rem; }
+    .main__jugaconnosotros .texto__jugaconnosotros .boton__juga {
+      padding-top: 3rem;
+      margin-bottom: 5vh; }
+  .main__jugaconnosotros .div__img--jugaconnosotros {
+    height: 41rem; }
+    .main__jugaconnosotros .div__img--jugaconnosotros .jugaconnosotros__img {
+      width: 50vw;
+      height: 41rem;
+      min-height: 41rem; }
+
+@media (max-width: 768px) {
+  .main__jugaconnosotros {
+    flex-direction: column;
+    align-items: flex-start; }
+    .main__jugaconnosotros .texto__jugaconnosotros {
+      padding-right: 5rem;
+      padding-left: 5rem;
+      padding-top: 6rem;
+      font-size: x-large; }
+      .main__jugaconnosotros .texto__jugaconnosotros .texto__jugaconnosotros h2 {
+        font-size: 4rem; }
+    .main__jugaconnosotros .div__img--jugaconnosotros {
+      height: 38rem; }
+      .main__jugaconnosotros .div__img--jugaconnosotros .jugaconnosotros__img {
+        width: 100vw; } }
+
+@media (max-width: 480px) {
+  .main__jugaconnosotros {
+    text-align: initial;
+    justify-content: center;
+    height: 35rem; }
+    .main__jugaconnosotros .div__img--jugaconnosotros {
+      height: 5rem; }
+      .main__jugaconnosotros .div__img--jugaconnosotros .jugaconnosotros__img {
+        display: none; }
+    .main__jugaconnosotros .texto__jugaconnosotros {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-top: 6rem;
+      font-size: 1.2rem; }
+      .main__jugaconnosotros .texto__jugaconnosotros .texto__jugaconnosotros h2 {
+        font-size: 2.5rem; } }
+
+.contactanos {
+  background-color: #87d68d;
+  height: 124vh;
+  justify-content: space-around; }
+
+.main__dondeestamos {
+  grid-area: main__dondeestamos;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: xx-large;
+  margin-bottom: 6rem; }
+  .main__dondeestamos .dondeestamos__h2 {
+    margin-bottom: 4rem;
+    font-size: 4rem; }
+  .main__dondeestamos #iframe__dondeestamos {
+    width: 80vw; }
+
+@media (max-width: 768px) {
+  .main__dondeestamos #iframe__dondeestamos {
+    height: 80vh; } }
+
+@media (max-width: 480px) {
+  .main__dondeestamos {
+    font-size: 3rem;
+    width: 100vw;
+    margin-bottom: 0; }
+    .main__dondeestamos .main__dondeestamos h2 {
+      font-size: 3rem; }
+    .main__dondeestamos .main__dondeestamos iframe {
+      width: 80vw;
+      height: 60vh; } }
+
+.footer {
+  background-color: #fcca46;
+  /* padding: 0.3rem 0.9rem;
+    justify-content: space-between; */ }
+
+.juego__main {
+  height: 100vh;
+  width: 100vw; }
+  .juego__main .img__juego {
+    height: 50vh; }
+
+.juego__main {
+  height: 100vh;
+  width: 100vw; }
+  .juego__main .img__juego {
+    height: 50vh; }
+
+.main__elige {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 0.5fr 0.4fr 0.9fr;
+  gap: 0px 23px;
+  grid-template-areas: "img glosario" "texto glosario" "botones glosario";
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: stretch; }
+  .main__elige .glosario {
+    grid-area: glosario;
+    background-color: #87d68d;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center; }
+    .main__elige .glosario .elige__glosario--titulo {
+      font-size: xx-large;
+      margin-top: 4rem; }
+    .main__elige .glosario .glosario__estructura {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: larger;
+      padding-bottom: 5rem; }
+      .main__elige .glosario .glosario__estructura .glosario__div {
+        margin-top: 10rem; }
+  .main__elige .img__elige {
+    grid-area: img;
+    width: 70vw;
+    padding-left: 5rem;
+    padding-top: 0.5rem; }
+  .main__elige .texto__elige {
+    grid-area: texto;
+    padding: 0 5.4rem;
+    align-self: center;
+    font-size: x-large; }
+
+.div__elige {
+  grid-area: botones;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .div__elige .botonera__elige {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+    .div__elige .botonera__elige .boton__elige {
+      text-align: center;
+      width: 30rem;
+      height: 20vh;
+      margin: 0.8rem 0.5rem; }
+
+.linkJuego {
+  font-size: 1.3rem; }
+
+@media (max-width: 768px) {
+  .main__elige {
+    grid-template-columns: 5fr;
+    grid-template-rows: 0.4fr 0.5fr 0.6fr 1.1fr;
+    gap: 15px 0px;
+    grid-template-areas: "img" "texto" "glosario" "botones"; }
+    .main__elige .glosario .elige__glosario--titulo {
+      margin-top: 0; }
+    .main__elige .glosario .glosario__estructura {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: medium;
+      padding: 0 15px; }
+      .main__elige .glosario .glosario__estructura .glosario__div {
+        margin-top: 2rem; }
+    .main__elige .img__elige {
+      padding-left: 2rem;
+      width: 90vw; }
+    .main__elige .texto__elige {
+      font-size: 1.2rem; }
+    .main__elige .div__elige {
+      align-self: center; }
+      .main__elige .div__elige .botonera__elige {
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+        margin-top: 2rem; }
+        .main__elige .div__elige .botonera__elige .boton__elige {
+          text-align: center;
+          width: 60vw;
+          height: 20vh;
+          margin: 0.8rem; }
+  .linkJuego {
+    font-size: 1.1rem; } }
+
+@media (max-width: 480px) {
+  .main__elige {
+    grid-template-rows: 0.3fr 0.3fr 0.5fr 1.1fr;
+    gap: 40px 0px; }
+    .main__elige .glosario .glosario p {
+      padding: 0 2rem;
+      padding-bottom: 1rem; }
+    .main__elige .glosario .elige__glosario--titulo {
+      font-size: x-large;
+      margin-top: 1rem; }
+    .main__elige .glosario .glosario__estructura {
+      font-size: small; }
+      .main__elige .glosario .glosario__estructura .glosario__estructura div {
+        margin-top: 0; }
+    .main__elige .texto__elige {
+      font-size: medium;
+      padding: 0 0rem; }
+      .main__elige .texto__elige .texto__elige p {
+        padding: 0 1rem; }
+    .main__elige .img__elige {
+      padding-left: 1rem; }
+    .main__elige .botonera__elige {
+      margin-bottom: 2rem;
+      margin-top: 0; }
+      .main__elige .botonera__elige .boton__elige {
+        width: 14rem;
+        margin-left: 7rem; }
+  .linkJuego {
+    font-size: 0.8rem; } }
+
+.main__elige--op2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr 1.2fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "img img" "glosario texto" "glosario botones";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center; }
+  .main__elige--op2 .glosario--op2 {
+    grid-area: glosario;
+    background-color: #87d68d;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center; }
+    .main__elige--op2 .glosario--op2 .glosario__estructura--op2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .main__elige--op2 .glosario--op2 .glosario__estructura--op2 .glosario__div--op2 {
+        margin-top: 7rem; }
+  .main__elige--op2 .img__elige--op2 {
+    grid-area: img; }
+    .main__elige--op2 .img__elige--op2 .img__elige--img2 {
+      width: 100vw;
+      height: 35rem; }
+  .main__elige--op2 .div__elige--op2 {
+    padding-bottom: 6rem;
+    grid-area: botones; }
+    .main__elige--op2 .div__elige--op2 .botonera__elige--op2 {
+      display: flex;
+      flex-direction: column; }
+      .main__elige--op2 .div__elige--op2 .botonera__elige--op2 .boton__elige {
+        text-align: center;
+        width: 20rem;
+        height: 20vh;
+        margin: 0.8rem; }
+  .main__elige--op2 .texto__elige--op2 {
+    grid-area: texto;
+    align-self: center;
+    text-align: center;
+    font-size: x-large;
+    padding-right: 2rem; }
+
+@media (max-width: 768px) {
+  .main__elige--op2 {
+    grid-template-columns: 5fr;
+    grid-template-rows: 0.6fr 0.4fr 0.2fr 0.5fr;
+    gap: 50px 0px;
+    grid-template-areas: "img" "texto" "glosario" "botones";
+    align-content: flex-start; }
+    .main__elige--op2 .img__elige--op2 .img__elige--img2 {
+      height: 25rem; }
+    .main__elige--op2 .glosario--op2 {
+      width: 100vw;
+      padding-bottom: 2rem; }
+      .main__elige--op2 .glosario--op2 .glosario__estructura--op2 {
+        display: flex;
+        flex-direction: row; }
+        .main__elige--op2 .glosario--op2 .glosario__estructura--op2 .glosario__div--op2 {
+          margin-top: 2rem; }
+    .main__elige--op2 .div__elige--op2 {
+      padding-bottom: 0rem; } }
+
+@media (max-width: 480px) {
+  .main__elige--op2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.6fr 1fr;
+    gap: 50px 0px;
+    grid-template-areas: "img" "glosario" "texto" "glosario" "botones";
+    justify-content: stretch;
+    align-items: stretch; }
+    .main__elige--op2 .glosario__estructura--op2 {
+      font-size: medium; }
+    .main__elige--op2 .img__elige--op2 .img__elige--img2 {
+      height: 13rem; }
+    .main__elige--op2 .div__elige--op2 .botonera__elige--op2 {
+      margin-bottom: 2rem; }
+      .main__elige--op2 .div__elige--op2 .botonera__elige--op2 .boton__elige {
+        width: 60vw;
+        margin-left: 0.2rem; }
+    .main__elige--op2 .texto__elige--op2 {
+      padding-right: 0rem;
+      font-size: larger; } }
+
+.main__elige--op3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1.1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "img img" "texto glosario" "botones glosario";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center; }
+  .main__elige--op3 .glosario--op3 {
+    grid-area: glosario;
+    background-color: #87d68d;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center; }
+    .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 {
+      margin-top: 7rem; }
+  .main__elige--op3 .img__elige--op3 {
+    grid-area: img; }
+    .main__elige--op3 .img__elige--op3 .img__elige--img3 {
+      width: 100vw;
+      height: 40rem; }
+  .main__elige--op3 .div__elige--op3 {
+    padding-bottom: 6rem;
+    grid-area: botones; }
+    .main__elige--op3 .div__elige--op3 .botonera__elige--op3 {
+      display: flex;
+      flex-direction: column; }
+      .main__elige--op3 .div__elige--op3 .botonera__elige--op3 .boton__elige {
+        text-align: center;
+        width: 20rem;
+        height: 20vh;
+        margin: 0.8rem; }
+  .main__elige--op3 .texto__elige--op3 {
+    grid-area: texto;
+    align-self: center;
+    text-align: center;
+    font-size: x-large;
+    padding-right: 2rem; }
+
+@media (max-width: 768px) {
+  .main__elige--op3 {
+    grid-template-columns: 5fr;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr 0.5fr;
+    gap: 50px 0px;
+    grid-template-areas: "img" "texto" "glosario" "botones";
+    align-content: stretch; }
+    .main__elige--op3 .glosario--op3 .glosario__estructura--op2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 {
+        margin-top: 2rem; }
+    .main__elige--op3 .img__elige--op3 .img__elige--img3 {
+      height: 25rem; } }
+
+@media (max-width: 480px) {
+  .main__elige--op3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.5fr 0.5fr;
+    gap: 50px 0px;
+    grid-template-areas: "img" "texto" "glosario" "botones"; }
+    .main__elige--op3 .img__elige--op3 .img__elige--img3 {
+      width: 100vw;
+      height: 17rem; }
+    .main__elige--op3 .glosario--op3 {
+      width: 100vw; }
+    .main__elige--op3 .div__elige--op3 {
+      padding-bottom: 2rem; }
+    .main__elige--op3 .texto__elige--op3 {
+      padding-right: 0rem; } }
+
+.main__elige--op4 {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas: "glosario img" "glosario texto" "glosario botones";
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: stretch; }
+  .main__elige--op4 .glosario--op4 {
+    grid-area: glosario;
+    background-color: #87d68d;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center; }
+    .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
+      font-size: xx-large;
+      margin-top: 4rem; }
+    .main__elige--op4 .glosario--op4 .glosario__estructura {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: larger;
+      padding-bottom: 5rem; }
+      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div {
+        margin-top: 10rem; }
+  .main__elige--op4 .img__elige--op4 {
+    width: 0rem;
+    padding-left: 5rem; }
+    .main__elige--op4 .img__elige--op4 .img__elige--img4 {
+      width: 70vw; }
+  .main__elige--op4 .div__elige--op4 {
+    grid-area: botones;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .main__elige--op4 .div__elige--op4 .botonera__elige--op4 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center; }
+      .main__elige--op4 .div__elige--op4 .botonera__elige--op4 .boton__elige {
+        text-align: center;
+        width: 30rem;
+        height: 20vh;
+        margin: 0.8rem; }
+  .main__elige--op4 .texto__elige--op4 {
+    grid-area: texto;
+    align-self: center;
+    font-size: x-large;
+    justify-self: center;
+    padding-right: 5rem;
+    padding-left: 5rem; }
+
+@media (max-width: 768px) {
+  .main__elige--op4 {
+    grid-template-columns: 5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.5fr 0.5fr;
+    gap: 30px 0px;
+    grid-template-areas: "img" "texto" "glosario" "botones"; }
+    .main__elige--op4 .img__elige--op4 {
+      padding-left: 0; }
+      .main__elige--op4 .img__elige--op4 .img__elige--img4 {
+        width: 100vw; }
+    .main__elige--op4 .texto__elige--op4 {
+      font-size: 1.4rem; }
+    .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
+      margin-top: 0; }
+    .main__elige--op4 .glosario--op4 .glosario__estructura {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-size: medium;
+      padding: 0 15px; }
+      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div {
+        margin-top: 2rem; }
+    .main__elige--op4 .div__elige--op4 {
+      align-self: center; }
+      .main__elige--op4 .div__elige--op4 .botonera__elige--op4 {
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+        width: 100vw; }
+        .main__elige--op4 .div__elige--op4 .botonera__elige--op4 .boton__elige {
+          margin: 0.8 0rem;
+          width: 50vw;
+          height: 20vh; } }
+
+@media (max-width: 480px) {
+  .main__elige--op4 {
+    grid-template-rows: 0.4fr 0.2fr 0.4fr 0.4fr;
+    gap: 25px 0px; }
+    .main__elige--op4 .glosario--op4 .glosario--op4 p {
+      padding: 0 2rem; }
+    .main__elige--op4 .glosario--op4 .glosario p {
+      padding: 0 2rem;
+      padding-bottom: 1rem; }
+    .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
+      font-size: x-large;
+      margin-top: 1rem; }
+    .main__elige--op4 .glosario--op4 .glosario__estructura {
+      font-size: small; }
+      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__estructura div {
+        margin-top: 0; }
+    .main__elige--op4 .texto__elige--op4 {
+      font-size: 1rem;
+      padding: 0 0rem; }
+      .main__elige--op4 .texto__elige--op4 .texto__elige--op4 p {
+        padding: 0 1rem;
+        text-align: center; }
+    .main__elige--op4 .img__elige--op4 {
+      width: 0rem;
+      padding-left: 0rem; }
+      .main__elige--op4 .img__elige--op4 .img__elige--img4 {
+        padding-left: 0rem; }
+    .main__elige--op4 .div__elige--op4 .botonera__elige--op4 {
+      margin-left: 0rem; } }
+
+.main__fiesta {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 0.4fr 1fr 0.4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "banda1 img__fiesta img__fiesta" "banda1 banda2 banda2" "img__fiesta2 img__fiesta2 banda3";
+  height: 50rem; }
+
+.banda1 {
+  grid-area: banda1;
+  background-color: #fcca46; }
+
+.banda2 {
+  grid-area: banda2;
+  background-color: #fcca46;
+  padding-top: 6rem;
+  font-size: xx-large; }
+
+.banda3 {
+  grid-area: banda3;
+  background-color: #fcca46;
+  text-align: center;
+  padding-top: 10rem; }
+
+.img__fiesta {
+  grid-area: img__fiesta;
+  background-color: #87d68d; }
+
+.img__fiesta2 {
+  grid-area: img__fiesta2;
+  background-color: #87d68d; }
+
+.animate__fadeInDownBig {
+  text-align: center;
+  padding-right: 8rem;
+  font-size: 6rem; }
+
+@media (max-width: 768px) {
+  .animate__fadeInDownBig {
+    font-size: 4rem; }
+  .banda3 a {
+    padding: 7px 7px;
+    font-size: 1.4rem; } }
+
+@media (max-width: 480px) {
+  .fiesta__recreativa {
+    font-size: 3rem; } }
