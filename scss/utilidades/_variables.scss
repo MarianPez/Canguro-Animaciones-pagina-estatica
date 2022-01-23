@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 $naranjaOscuro: #fe7f2d;
 $verde: #87d68d;
 $naranjaClaro: #fcca46;
 $fuenteTitulos: 'Carter One', cursive;
-$fuenteGeneral: 'Roboto', sans-serif;
+@mixin fuenteGeneral {
+    font-family:'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+

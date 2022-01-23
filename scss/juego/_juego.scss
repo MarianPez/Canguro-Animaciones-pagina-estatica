@@ -2,6 +2,14 @@
   height: 100vh;
   width: 100vw;
 
+  .h4 {
+    @include fuenteGeneral;
+  }
+
+  .principal__juego {
+    font-family: $fuenteTitulos;
+  }
+
   .img__juego {
     height: 50vh;
   }

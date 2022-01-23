@@ -8,10 +8,12 @@
   font-size: xx-large;
   margin-bottom: 6rem;
 
-  .dondeestamos__h2 {
+  .fuente_dondeestamos {
+    font-family: $fuenteTitulos;
     margin-bottom: 4rem;
     font-size: 4rem;
   }
+
 
   #iframe__dondeestamos {
     width: 80vw;

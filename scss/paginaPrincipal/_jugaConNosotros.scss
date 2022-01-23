@@ -4,6 +4,7 @@
   align-items: center;
   text-align: center;
   background-color: $verde;
+  @include fuenteGeneral;
 
   .texto__jugaconnosotros {
     padding-right: 5rem;
@@ -13,8 +14,16 @@
     padding-top: 5rem;
     color: white;
     font-size: x-large;
-    padding-top: 8rem;
+    padding-top: 3rem;
     margin-bottom: 0rem;
+
+    .display-4 {
+      font-family: $fuenteTitulos;
+    }
+
+    .resaltador {
+      @include fuenteGeneral
+    }
 
     .texto__jugaconnosotros h2 {
       font-size: 3rem;

@@ -12,14 +12,16 @@
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
+  @include fuenteGeneral;
 
   .glosario--op4 {
     grid-area: glosario;
-    background-color: #87d68d;
+    background-color: $verde;
     justify-content: stretch;
     justify-self: stretch;
     align-self: stretch;
     text-align: center;
+    font-family: $fuenteTitulos;
 
     .elige__glosario--titulo {
       font-size: xx-large;
@@ -86,7 +88,7 @@
 @media (max-width: 768px) {
   .main__elige--op4 {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.4fr 0.4fr 0.5fr 0.5fr;
+    grid-template-rows: 0.4fr 0.2fr 0.5fr 0.4fr;
     gap: 30px 0px;
     grid-template-areas:
       "img"
@@ -146,7 +148,7 @@
 
 @media (max-width: 480px) {
   .main__elige--op4 {
-    grid-template-rows: 0.4fr 0.2fr 0.4fr 0.4fr;
+    grid-template-rows: 0.3fr 0.1fr 0.3fr 1fr;
     gap: 25px 0px;
 
     .glosario--op4 {

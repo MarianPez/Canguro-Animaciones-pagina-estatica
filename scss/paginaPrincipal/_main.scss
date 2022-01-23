@@ -13,8 +13,14 @@
 
   .carousel-caption {
     padding-bottom: 20%;
+
+    .resaltador {
+
+      font-family: $fuenteTitulos;
+    }
   }
 }
+
 
 @media (max-width: 768px) {
   .main {

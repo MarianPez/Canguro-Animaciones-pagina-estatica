@@ -1,5 +1,12 @@
 .footer {
-  background-color: #fcca46;
-  /* padding: 0.3rem 0.9rem;
-    justify-content: space-between; */
+  background-color: $naranjaClaro;
+
+
+ .titulos__footer{
+   font-family: $fuenteTitulos;
+ }
+
+ .encontranos__footer{
+   @include fuenteGeneral
+ }
 }

@@ -11,34 +11,40 @@
     "img__fiesta2 img__fiesta2 banda3";
   height: 50rem;
 }
-
+.fiesta__letra{
+  @include fuenteGeneral();
+}
 .banda1 {
   grid-area: banda1;
-  background-color: #fcca46;
+  background-color: $naranjaClaro;
+}
+
+.fiesta__recreativa{
+  font-family: $fuenteTitulos;
 }
 
 .banda2 {
   grid-area: banda2;
-  background-color: #fcca46;
+  background-color: $naranjaClaro;
   padding-top: 6rem;
   font-size: xx-large;
 }
 
 .banda3 {
   grid-area: banda3;
-  background-color: #fcca46;
+  background-color: $naranjaClaro;
   text-align: center;
   padding-top: 10rem;
 }
 
 .img__fiesta {
   grid-area: img__fiesta;
-  background-color: #87d68d;
+  background-color: $verde;
 }
 
 .img__fiesta2 {
   grid-area: img__fiesta2;
-  background-color: #87d68d;
+  background-color: $verde;
 }
 
 .animate__fadeInDownBig {

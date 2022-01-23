@@ -53,18 +53,14 @@ ul {
 }
 
 .body {
-  font-family: Helvetica, sans-serif;
-  font-weight: bolder;
+@include fuenteGeneral()
 }
 
-.fuentes {
-  font-family: Helvetica, sans-serif;
-  font-weight: bolder;
-}
 
-.fuentes__titulos {
- font-family: "Carter One", cursive;
-}
+
+// .fuentes__titulos {
+//  font-family: "Carter One", cursive;
+// }
 
 .resaltador {
   color: $naranjaOscuro;
@@ -81,12 +77,13 @@ ul {
 .btn-primary,
 .btn-primary:hover {
   color: black;
-  background-color: #fe7f2d;
-  border-color: #fe7f2d;
+  background-color: $naranjaOscuro;
+  border-color: $naranjaOscuro;
   box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: large;
+  font-family: $fuenteTitulos;
 }
 
 .btn-check:active + .btn-primary:focus,
@@ -100,17 +97,18 @@ ul {
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: black;
-  background-color: #fe7f2d;
-  border-color: #fe7f2d;
+  background-color: $naranjaOscuro;
+  border-color: $naranjaOscuro;
   box-shadow: none;
 }
 
 .btn-primary:active {
   color: black;
-  background-color: #fe7f2d;
-  border-color: #fe7f2d;
+  background-color: $naranjaOscuro;
+  border-color: $naranjaOscuro;
   box-shadow: none;
-  font-size: larger;
+  font-size: large;
+  font-family: $fuenteTitulos;
 }
 
 input {

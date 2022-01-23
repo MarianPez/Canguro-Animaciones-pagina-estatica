@@ -20,6 +20,7 @@
     background-color: $verde;
     font-size: 3rem;
     text-align: center;
+    font-family: $fuenteTitulos;
 
     &:hover {
       transform: scale(1.2) translate(60px);
@@ -35,6 +36,7 @@
     background-color: $verde;
     font-size: 3rem;
     text-align: center;
+    font-family: $fuenteTitulos;
 
     &:hover {
       transform: scale(1.1) translate(-15px);
@@ -66,7 +68,7 @@
     background-color: $verde;
     font-size: 3rem;
     text-align: center;
-
+    font-family: $fuenteTitulos;
     &:hover {
       transform: scale(1.1) translate(15px);
       font-size: 5rem;
@@ -81,6 +83,7 @@
     background-color: $verde;
     font-size: 3rem;
     text-align: center;
+    font-family: $fuenteTitulos;
 
     &:hover {
       transform: scale(1.2) translate(-60px);
@@ -96,13 +99,14 @@
   border: solid 2px;
   background-color: $naranjaOscuro;
   writing-mode: vertical-lr;
-
+  font-family: $fuenteTitulos;
 }
 
 .borde-superior {
   grid-area: borde-superior;
   border: solid 2px;
   background-color: $naranjaOscuro;
+  font-family: $fuenteTitulos;
 }
 
 .izq-borde {
@@ -110,13 +114,14 @@
   border: solid 2px;
   background-color: $naranjaOscuro;
   writing-mode: vertical-lr;
-
+  font-family: $fuenteTitulos;
 }
 
 .borde-inferior {
   grid-area: borde-inferior;
   border: solid 2px;
   background-color: $naranjaOscuro;
+  font-family: $fuenteTitulos;
 }
 
 @media (max-width: 768px) {

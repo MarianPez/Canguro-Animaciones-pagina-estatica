@@ -12,10 +12,11 @@
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
+  @include fuenteGeneral;
 
   .glosario {
     grid-area: glosario;
-    background-color: #87d68d;
+    background-color: $verde;
     justify-content: stretch;
     justify-self: stretch;
     align-self: stretch;
@@ -24,6 +25,7 @@
     .elige__glosario--titulo {
       font-size: xx-large;
       margin-top: 4rem;
+      font-family: $fuenteTitulos;
     }
 
     .glosario__estructura {
@@ -35,6 +37,11 @@
 
       .glosario__div {
         margin-top: 10rem;
+        @include fuenteGeneral;
+
+        .resaltador {
+          font-family: $fuenteTitulos;
+        }
       }
     }
   }
@@ -42,7 +49,7 @@
   .img__elige {
     grid-area: img;
     width: 70vw;
-    padding-left: 5rem;
+    padding-left: 4vw;
     padding-top: 0.5rem;
   }
 
@@ -51,6 +58,7 @@
     padding: 0 5.4rem;
     align-self: center;
     font-size: x-large;
+    @include fuenteGeneral;
   }
 }
 
@@ -75,6 +83,7 @@
       width: 30rem;
       height: 20vh;
       margin: 0.8rem 0.5rem;
+      @include fuenteGeneral
     }
   }
 }
@@ -97,17 +106,19 @@
     .glosario {
       .elige__glosario--titulo {
         margin-top: 0;
+        font-size: xx-large;
       }
 
       .glosario__estructura {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: medium;
+        font-size: large;
         padding: 0 15px;
 
         .glosario__div {
-          margin-top: 2rem;
+          margin-top: 4rem;
+
         }
       }
     }
@@ -137,6 +148,9 @@
         }
       }
     }
+
+
+
   }
 
   .linkJuego {
@@ -146,10 +160,12 @@
 
 @media (max-width: 480px) {
   .main__elige {
-    grid-template-rows: 0.3fr 0.3fr 0.5fr 1.1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.4fr 1.2fr;
     gap: 40px 0px;
 
     .glosario {
+      padding-bottom: 1rem;
+
       .glosario p {
         padding: 0 2rem;
         padding-bottom: 1rem;
@@ -163,15 +179,15 @@
       .glosario__estructura {
         font-size: small;
 
-        .glosario__estructura div {
-          margin-top: 0;
+        .glosario__div {
+          margin-top: 1rem;
         }
       }
     }
 
     .texto__elige {
       font-size: medium;
-      padding: 0 0rem;
+      padding: 0 2rem;
 
       .texto__elige p {
         padding: 0 1rem;
