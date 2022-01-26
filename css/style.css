@@ -410,6 +410,9 @@ input {
       justify-content: space-around;
       align-items: center;
       font-size: larger; }
+      .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
         width: 15vw; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .titulos__nuestrasfiestas {
@@ -512,7 +515,7 @@ input {
 
 .contactanos {
   background-color: #87d68d;
-  height: 124vh;
+  height: 140vh;
   justify-content: space-around; }
   .contactanos .resaltador {
     font-family: "Carter One", cursive; }

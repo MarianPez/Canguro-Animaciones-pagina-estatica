@@ -29,6 +29,10 @@
       justify-content: space-around;
       align-items: center;
       font-size: larger;
+      
+      p{
+        @include fuenteGeneral;
+      }
 
       .nuestrasfiestas__img {
         width: 15vw;
