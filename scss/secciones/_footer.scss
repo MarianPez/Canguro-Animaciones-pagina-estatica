@@ -14,4 +14,13 @@
   color: $naranjaOscuro;
  }
 
+.secciones__titulos{
+  font-family: $fuenteTitulos;
+  color: $naranjaOscuro;
+}
+
+.secciones__links{
+  @include fuenteGeneral;
+}
+
 }

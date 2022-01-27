@@ -14,13 +14,7 @@
   width: 100vw;
   height: 100vh;
 
-.texto_portada{
-  font-size: 3rem;
 
-  &:hover{
-    font-size: 5rem;
-  }
-}
 
   .izq-arriba {
     grid-area: izq-arriba;
@@ -30,6 +24,7 @@
       transform: scale(1.2) translate(60px);
       transition-duration: 0.1s;
       padding-top: 2rem;
+      font-size: 4rem;
     }
   }
 
@@ -41,6 +36,7 @@
       transform: scale(1.1) translate(-15px);
       padding-top: 5rem;
       transition-duration: 0.1s;
+      font-size: 4rem;
     }
   }
 

@@ -163,22 +163,20 @@ input {
   grid-template-areas: "borde-superior borde-superior borde-superior borde-superior der-borde" "izq-borde izq-arriba izq-arriba der-arriba der-borde" "izq-borde izq-abajo centro der-arriba der-borde" "izq-borde izq-abajo der-abajo der-abajo der-borde" "izq-borde borde-inferior borde-inferior borde-inferior borde-inferior";
   width: 100vw;
   height: 100vh; }
-  .portada .texto_portada {
-    font-size: 3rem; }
-    .portada .texto_portada:hover {
-      font-size: 5rem; }
   .portada .izq-arriba {
     grid-area: izq-arriba; }
     .portada .izq-arriba:hover {
       transform: scale(1.2) translate(60px);
       transition-duration: 0.1s;
-      padding-top: 2rem; }
+      padding-top: 2rem;
+      font-size: 4rem; }
   .portada .der-arriba {
     grid-area: der-arriba; }
     .portada .der-arriba:hover {
       transform: scale(1.1) translate(-15px);
       padding-top: 5rem;
-      transition-duration: 0.1s; }
+      transition-duration: 0.1s;
+      font-size: 4rem; }
   .portada .centro {
     grid-area: centro;
     border: solid 2px; }
@@ -574,6 +572,12 @@ input {
     font-weight: bolder; }
   .footer .bi:hover {
     color: #fe7f2d; }
+  .footer .secciones__titulos {
+    font-family: "Carter One", cursive;
+    color: #fe7f2d; }
+  .footer .secciones__links {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder; }
 
 .juego__main {
   height: 100vh;
@@ -758,7 +762,7 @@ input {
   .main__elige--op2 .img__elige--op2 {
     grid-area: img; }
     .main__elige--op2 .img__elige--op2 .img__elige--img2 {
-      width: 98vw;
+      width: 98.8vw;
       height: 35rem; }
   .main__elige--op2 .div__elige--op2 {
     padding-bottom: 6rem;
@@ -788,6 +792,7 @@ input {
     grid-template-areas: "img" "texto" "glosario" "botones";
     align-content: flex-start; }
     .main__elige--op2 .img__elige--op2 .img__elige--img2 {
+      width: 100vw;
       height: 25rem; }
     .main__elige--op2 .glosario--op2 {
       width: 100vw;
@@ -849,7 +854,7 @@ input {
   .main__elige--op3 .img__elige--op3 {
     grid-area: img; }
     .main__elige--op3 .img__elige--op3 .img__elige--img3 {
-      width: 99vw;
+      width: 98.8vw;
       height: 40rem; }
   .main__elige--op3 .div__elige--op3 {
     padding-bottom: 6rem;
@@ -885,6 +890,7 @@ input {
       .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 {
         margin-top: 2rem; }
     .main__elige--op3 .img__elige--op3 .img__elige--img3 {
+      width: 100vw;
       height: 25rem; } }
 
 @media (max-width: 480px) {
