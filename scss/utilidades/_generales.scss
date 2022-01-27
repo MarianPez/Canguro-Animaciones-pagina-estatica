@@ -86,6 +86,10 @@ ul {
   font-family: $fuenteTitulos;
 }
 
+.btn-primary:hover{
+  font-size: x-large;
+}
+
 .btn-check:active + .btn-primary:focus,
 .btn-check:checked + .btn-primary:focus,
 .btn-primary.active:focus,

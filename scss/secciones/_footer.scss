@@ -9,4 +9,9 @@
  .encontranos__footer{
    @include fuenteGeneral
  }
+ 
+ .bi:hover{
+  color: $naranjaOscuro;
+ }
+
 }
