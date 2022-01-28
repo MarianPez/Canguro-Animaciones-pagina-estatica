@@ -84,12 +84,50 @@
 .der-borde {
   writing-mode: vertical-lr;
 
+  .animacion__borde {
+    overflow: hidden;
+    animation: slide-slow 30s;
+    margin-top: 0%;
+    animation-iteration-count: infinite;
+
+    @keyframes slide-slow {
+      from {
+        margin-bottom: 100%;
+      }
+
+      to {
+        margin-bottom: 0%;
+      }
+    }
+  }
+
 }
 
 
 .izq-borde {
   writing-mode: vertical-lr;
+
+
+  .animacion__borde {
+    overflow: hidden;
+    animation: slide-slow 30s;
+    margin-top: 0%;
+    animation-iteration-count: infinite;
+
+
+    @keyframes slide-slow {
+      from {
+        margin-top: 100%;
+      }
+
+      to {
+        margin-top: 0%;
+      }
+    }
+  }
 }
+
+
 
 
 @media (max-width: 768px) {
