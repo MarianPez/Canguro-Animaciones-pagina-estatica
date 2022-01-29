@@ -429,7 +429,7 @@ input {
   text-align: center;
   grid-area: main__nuestrasfiestas; }
   .main__nuestrasfiestas .nuestrasfiestas__titulo {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: "Carter One", cursive; }
   .main__nuestrasfiestas .nuestrasfiestas--display__flex {
     display: flex;
@@ -447,19 +447,19 @@ input {
       border-radius: 6px;
       width: 25vw;
       height: 80vh;
-      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      font-size: larger; }
+      font-size: x-large;
+      padding: 0 10px; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div p {
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
         width: 15vw; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .titulos__nuestrasfiestas {
-        font-size: x-large;
+        font-size: xx-large;
         font-family: "Carter One", cursive; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div:hover {
         background-color: #fcca46;

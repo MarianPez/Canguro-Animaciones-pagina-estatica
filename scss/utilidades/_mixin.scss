@@ -26,4 +26,11 @@
     align-self: stretch;
     text-align: center;
     font-family: $fuenteTitulos;
+};
+
+@mixin botonElige ($width) {
+    text-align: center;
+    width: $width;
+    height: 20vh;
+    margin: 0.8rem;
 }

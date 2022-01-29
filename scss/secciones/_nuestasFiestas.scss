@@ -3,7 +3,7 @@
   grid-area: main__nuestrasfiestas;
 
   .nuestrasfiestas__titulo {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: $fuenteTitulos;
   }
 
@@ -23,12 +23,12 @@
       border-radius: 6px;
       width: 25vw;
       height: 80vh;
-      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      font-size: larger;
+      font-size: x-large;
+      padding: 0 10px;
       
       p{
         @include fuenteGeneral;
@@ -39,7 +39,7 @@
       }
 
       .titulos__nuestrasfiestas {
-        font-size: x-large;
+        font-size: xx-large;
         font-family: $fuenteTitulos;
       }
 

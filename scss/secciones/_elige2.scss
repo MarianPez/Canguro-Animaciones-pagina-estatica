@@ -49,10 +49,7 @@
       flex-direction: column;
 
       .boton__elige {
-        text-align: center;
-        width: 30vw;
-        height: 20vh;
-        margin: 0.8rem;
+        @include botonElige(30vw)
       }
     }
   }
