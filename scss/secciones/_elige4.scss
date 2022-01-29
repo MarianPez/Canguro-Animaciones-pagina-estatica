@@ -15,13 +15,7 @@
   @include fuenteGeneral;
 
   .glosario--op4 {
-    grid-area: glosario;
-    background-color: $verde;
-    justify-content: stretch;
-    justify-self: stretch;
-    align-self: stretch;
-    text-align: center;
-    font-family: $fuenteTitulos;
+ @include glosario;
 
     .elige__glosario--titulo {
       font-size: xx-large;
@@ -76,11 +70,6 @@
   }
 
   .texto__elige--op4 {
-    grid-area: texto;
-    align-self: center;
-    font-size: x-large;
-    justify-self: center;
-    padding-right: 5rem;
     padding-left: 5rem;
   }
 }

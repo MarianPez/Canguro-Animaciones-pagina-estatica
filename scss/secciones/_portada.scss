@@ -21,10 +21,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      transform: scale(1.1) translate(20px);
-      transition-duration: 0.3s;
-      padding-top: 2rem;
-      font-size: 3rem;
+      @include hoverPortada (1.1, 20px, 2rem, 0.3s, 3rem)
     }
   }
 
@@ -33,10 +30,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      transform: scale(1.1) translate(-10px);
-      padding-top: 5rem;
-      transition-duration: 0.4s;
-      font-size: 3rem;
+      @include hoverPortada (1.1, -10px, 5rem, 0.4s, 3rem);
     }
   }
 
@@ -59,13 +53,8 @@
     grid-area: izq-abajo;
     @extend %elementosPortada;
 
-
-
     &:hover {
-      transform: scale(1.1) translate(10px);
-      font-size: 3rem;
-      padding-top: 5rem;
-      transition-duration: 0.4s;
+      @include hoverPortada (1.1, 10px, 5rem, 0.4s, 3rem);
     }
   }
 
@@ -74,108 +63,85 @@
     @extend %elementosPortada;
 
     &:hover {
-      transform: scale(1.1) translate(-30px);
-      transition-duration: 0.4s;
-      font-size: 3rem;
-      padding-top: 2rem;
+      @include hoverPortada(1.1, -30px, 2rem, 0.4s, 3rem);
     }
   }
 }
 
 
-  .der-borde {
-    writing-mode: vertical-lr;
-  }
+.der-borde {
+  writing-mode: vertical-lr;
+}
 
 
-  .izq-borde {
-    writing-mode: vertical-lr;
-  }
+.izq-borde {
+  writing-mode: vertical-lr;
+}
 
 
-  @media (max-width: 768px) {
-    .portada {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-color: $naranjaOscuro;
+@media (max-width: 768px) {
+  .portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $naranjaOscuro;
+    width: 100vw;
+    height: 100vh;
+
+    .der-borde,
+    .izq-borde,
+    .borde-inferior,
+    .borde-superior {
+      display: none;
+    }
+
+
+
+    .izq-arriba {
+      @include elementosQueryPortada;
+
+      &:hover {
+        @include hoverPortada(1, 0px, 0rem, 0s, xx-large);
+      }
+    }
+
+    .der-arriba {
+      @include elementosQueryPortada;
+
+      &:hover {
+        @include hoverPortada(1, 0, 0rem, 0.1s, xx-large);
+      }
+    }
+
+    .izq-abajo {
+      @include elementosQueryPortada;
+
+      &:hover {
+        @include hoverPortada(1, 0, 0rem, 0.1s, xx-large);
+      }
+    }
+
+    .der-abajo {
+      @include elementosQueryPortada;
+
+      &:hover {
+        @include hoverPortada(1, 0, 0rem, 0.1s, xx-large);
+      }
+    }
+
+    .centro {
       width: 100vw;
-      height: 100vh;
 
-      .der-borde,
-      .izq-borde,
-      .borde-inferior,
-      .borde-superior {
-        display: none;
+      &:hover {
+        width: auto;
+        height: auto;
+        transition-duration: 0.1s;
       }
 
-
-
-      .izq-arriba {
-        font-size: xx-large;
-        text-align: center;
-        width: 100vw;
-
-        &:hover {
-          transform: scale(1) translate(0px);
-          font-size: xx-large;
-          transition-duration: 0s;
-          padding-top: 0rem;
-        }
-      }
-
-      .der-arriba {
-        font-size: xx-large;
-        text-align: center;
-        width: 100vw;
-
-        &:hover {
-          transform: scale(1) translate(0);
-          font-size: xx-large;
-          padding-top: 0rem;
-          transition-duration: 0.1s;
-        }
-      }
-
-      .izq-abajo {
-        font-size: xx-large;
-        text-align: center;
-        width: 100vw;
-
-        &:hover {
-          transform: scale(1) translate(0);
-          font-size: xx-large;
-          padding-top: 0rem;
-          transition-duration: 0.1s;
-        }
-      }
-
-      .der-abajo {
-        font-size: xx-large;
-        text-align: center;
-        width: 100vw;
-
-        &:hover {
-          transform: scale(1) translate(0);
-          transition-duration: 0.1s;
-          font-size: xx-large;
-          padding-top: 0rem;
-        }
-      }
-
-      .centro {
-        width: 100vw;
-
-        &:hover {
-          width: auto;
-          height: auto;
-          transition-duration: 0.1s;
-        }
-
-        .logo__portada {
-          width: 100%;
-          height: 100%;
-        }
+      .logo__portada {
+        width: 100%;
+        height: 100%;
       }
     }
   }
+}

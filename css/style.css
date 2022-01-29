@@ -31,6 +31,42 @@
   background-color: #fe7f2d;
   font-family: "Carter One", cursive; }
 
+.texto__elige {
+  grid-area: texto;
+  align-self: center;
+  text-align: center;
+  font-size: x-large;
+  padding-right: 5.4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder; }
+
+.texto__elige--op2 {
+  grid-area: texto;
+  align-self: center;
+  text-align: center;
+  font-size: x-large;
+  padding-right: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder; }
+
+.texto__elige--op3 {
+  grid-area: texto;
+  align-self: center;
+  text-align: center;
+  font-size: x-large;
+  padding-right: 0rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder; }
+
+.texto__elige--op4 {
+  grid-area: texto;
+  align-self: center;
+  text-align: center;
+  font-size: x-large;
+  padding-right: 5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder; }
+
 * {
   margin: 0;
   padding: 0;
@@ -167,8 +203,8 @@ input {
     grid-area: izq-arriba; }
     .portada .izq-arriba:hover {
       transform: scale(1.1) translate(20px);
-      transition-duration: 0.3s;
       padding-top: 2rem;
+      transition-duration: 0.3s;
       font-size: 3rem; }
   .portada .der-arriba {
     grid-area: der-arriba; }
@@ -190,16 +226,16 @@ input {
     grid-area: izq-abajo; }
     .portada .izq-abajo:hover {
       transform: scale(1.1) translate(10px);
-      font-size: 3rem;
       padding-top: 5rem;
-      transition-duration: 0.4s; }
+      transition-duration: 0.4s;
+      font-size: 3rem; }
   .portada .der-abajo {
     grid-area: der-abajo; }
     .portada .der-abajo:hover {
       transform: scale(1.1) translate(-30px);
+      padding-top: 2rem;
       transition-duration: 0.4s;
-      font-size: 3rem;
-      padding-top: 2rem; }
+      font-size: 3rem; }
 
 .der-borde {
   writing-mode: vertical-lr; }
@@ -226,36 +262,36 @@ input {
       width: 100vw; }
       .portada .izq-arriba:hover {
         transform: scale(1) translate(0px);
-        font-size: xx-large;
+        padding-top: 0rem;
         transition-duration: 0s;
-        padding-top: 0rem; }
+        font-size: xx-large; }
     .portada .der-arriba {
       font-size: xx-large;
       text-align: center;
       width: 100vw; }
       .portada .der-arriba:hover {
         transform: scale(1) translate(0);
-        font-size: xx-large;
         padding-top: 0rem;
-        transition-duration: 0.1s; }
+        transition-duration: 0.1s;
+        font-size: xx-large; }
     .portada .izq-abajo {
       font-size: xx-large;
       text-align: center;
       width: 100vw; }
       .portada .izq-abajo:hover {
         transform: scale(1) translate(0);
-        font-size: xx-large;
         padding-top: 0rem;
-        transition-duration: 0.1s; }
+        transition-duration: 0.1s;
+        font-size: xx-large; }
     .portada .der-abajo {
       font-size: xx-large;
       text-align: center;
       width: 100vw; }
       .portada .der-abajo:hover {
         transform: scale(1) translate(0);
+        padding-top: 0rem;
         transition-duration: 0.1s;
-        font-size: xx-large;
-        padding-top: 0rem; }
+        font-size: xx-large; }
     .portada .centro {
       width: 100vw; }
       .portada .centro:hover {
@@ -608,7 +644,8 @@ input {
     justify-content: stretch;
     justify-self: stretch;
     align-self: stretch;
-    text-align: center; }
+    text-align: center;
+    font-family: "Carter One", cursive; }
     .main__elige .glosario .elige__glosario--titulo {
       font-size: xx-large;
       margin-top: 4rem;
@@ -631,12 +668,7 @@ input {
     padding-left: 4vw;
     padding-top: 0.5rem; }
   .main__elige .texto__elige {
-    grid-area: texto;
-    padding: 0 5.4rem;
-    align-self: center;
-    font-size: x-large;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder; }
+    padding-left: 5.4rem; }
 
 .div__elige {
   grid-area: botones;
@@ -774,14 +806,6 @@ input {
         width: 30vw;
         height: 20vh;
         margin: 0.8rem; }
-  .main__elige--op2 .texto__elige--op2 {
-    grid-area: texto;
-    align-self: center;
-    text-align: center;
-    font-size: x-large;
-    padding-right: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder; }
 
 @media (max-width: 768px) {
   .main__elige--op2 {
@@ -867,13 +891,7 @@ input {
         height: 20vh;
         margin: 0.8rem; }
   .main__elige--op3 .texto__elige--op3 {
-    grid-area: texto;
-    align-self: center;
-    text-align: center;
-    font-size: x-large;
-    padding-right: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder; }
+    padding-left: 1rem; }
 
 @media (max-width: 768px) {
   .main__elige--op3 {
@@ -963,11 +981,6 @@ input {
         height: 20vh;
         margin: 0.8rem; }
   .main__elige--op4 .texto__elige--op4 {
-    grid-area: texto;
-    align-self: center;
-    font-size: x-large;
-    justify-self: center;
-    padding-right: 5rem;
     padding-left: 5rem; }
 
 @media (max-width: 768px) {

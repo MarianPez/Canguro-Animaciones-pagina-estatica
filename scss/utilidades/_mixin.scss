@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-@mixin fuenteGeneral {
+@mixin fuenteGeneral() {
     font-family:'Open Sans', sans-serif;
     font-weight: bolder;
+};
+
+@mixin hoverPortada ($scale,$translate,$padding,$duration,$size) {
+    transform: scale($scale) translate($translate);
+    padding-top: $padding;
+    transition-duration: $duration;
+    font-size: $size;    
+};
+
+@mixin elementosQueryPortada {
+    font-size: xx-large;
+        text-align: center;
+        width: 100vw;    
+};
+
+@mixin glosario {
+    grid-area: glosario;
+    background-color: $verde;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    font-family: $fuenteTitulos;
 }

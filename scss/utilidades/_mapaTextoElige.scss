@@ -1,0 +1,18 @@
+
+$textoElige: (
+    texto__elige: 5.4rem,
+    texto__elige--op2: 2rem,
+    texto__elige--op3: 0rem,
+    texto__elige--op4: 5rem,
+);
+
+ @each $texto, $padding in $textoElige {
+    .#{$texto}{
+    grid-area: texto;
+    align-self: center;
+     text-align: center;
+    font-size: x-large;
+    padding-right: $padding;
+    @include fuenteGeneral
+}
+ };

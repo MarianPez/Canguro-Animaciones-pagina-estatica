@@ -17,13 +17,8 @@
   @include fuenteGeneral;
 
   .glosario--op2 {
-    grid-area: glosario;
-    background-color: $verde;
-    justify-content: stretch;
-    justify-self: stretch;
-    align-self: stretch;
-    text-align: center;
-    font-family: $fuenteTitulos;
+   @include glosario;
+
 
     .glosario__estructura--op2 {
       display: flex;
@@ -62,14 +57,6 @@
     }
   }
 
-  .texto__elige--op2 {
-    grid-area: texto;
-    align-self: center;
-    text-align: center;
-    font-size: x-large;
-    padding-right: 2rem;
-    @include fuenteGeneral
-  }
 }
 
 @media (max-width: 768px) {
