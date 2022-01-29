@@ -31,6 +31,13 @@
 @mixin botonElige ($width) {
     text-align: center;
     width: $width;
-    height: 20vh;
     margin: 0.8rem;
+    @include fuenteGeneral();
+    padding-bottom: 1rem
+};
+
+@mixin definicionGlosario ($size, $padding) {
+    font-size: $size;
+    font-weight: bolder;
+    padding: 0 $padding; 
 }
