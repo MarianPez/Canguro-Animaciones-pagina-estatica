@@ -3,7 +3,7 @@
   grid-area: main__nuestrasfiestas;
 
   .nuestrasfiestas__titulo {
-    font-size: 8rem;
+    font-size: 9vw;
     font-family: $fuenteTitulos;
   }
 
@@ -57,6 +57,8 @@
   .main__nuestrasfiestas {
     .nuestrasfiestas--display__flex {
       flex-direction: column;
+
+    
 
       .nuestrasfiestas__div {
         width: 80vw;

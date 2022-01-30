@@ -17,7 +17,7 @@
   @include fuenteGeneral;
 
   .glosario--op3 {
-  @include glosario;
+    @include glosario;
 
     .glosario__estructura--op2 {
       .glosario__div--op2 {
@@ -28,7 +28,7 @@
           font-family: $fuenteTitulos
         }
 
-        .definicion__glosario{
+        .definicion__glosario {
           @include definicionGlosario (x-large, 50px)
         }
       }
@@ -37,7 +37,7 @@
 
   .img__elige--op3 {
     grid-area: img;
-   
+
     .img__elige--img3 {
       width: 98.8vw;
       height: 40rem;
@@ -54,11 +54,12 @@
 
       .boton__elige {
         @include botonElige(30vw)
+      }
     }
   }
-}
+
   .texto__elige--op3 {
-padding-left: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -68,7 +69,7 @@ padding-left: 1rem;
 
   .main__elige--op3 {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.2fr 0.3fr 0.5fr 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 50px 0px;
     grid-template-areas:
       "img"
@@ -76,6 +77,11 @@ padding-left: 1rem;
       "glosario"
       "botones";
     align-content: stretch;
+
+    .texto__elige--op3 {
+      font-size: 1.2rem;
+    }
+
 
     .glosario--op3 {
 
@@ -86,10 +92,12 @@ padding-left: 1rem;
 
         .glosario__div--op2 {
           margin-top: 2rem;
-          .resaltador{
+
+          .resaltador {
             font-size: 1.5rem;
           }
-          .definicion__glosario{
+
+          .definicion__glosario {
             @include definicionGlosario (large, 10px)
           }
         }
@@ -97,14 +105,16 @@ padding-left: 1rem;
     }
 
     .div__elige--op3 {
-  
+
       .botonera__elige--op3 {
-  
+
         .boton__elige {
-        @include botonElige (80vw)
+          @include botonElige (80vw);
+          margin: 0.1rem;
+        }
       }
-  }
-  }
+    }
+
     .img__elige--op3 {
       .img__elige--img3 {
         width: 100vw;
@@ -119,7 +129,7 @@ padding-left: 1rem;
 @media (max-width: 480px) {
   .main__elige--op3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.2fr 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.2fr 0.5fr 1fr;
     gap: 50px 0px;
     grid-template-areas:
       "img"
@@ -137,24 +147,27 @@ padding-left: 1rem;
     .glosario--op3 {
       width: 100vw;
 
-        .glosario__estructura--op2 {
-  
-          .glosario__div--op2 {
-            .resaltador{
-              font-size: medium;
-            }
-            .definicion__glosario{
-              @include definicionGlosario (small, 2px)
-            }
+      .glosario__estructura--op2 {
+
+        .glosario__div--op2 {
+          .resaltador {
+            font-size: medium;
+          }
+
+          .definicion__glosario {
+            @include definicionGlosario (small, 2px)
+          }
+        }
+      }
     }
-}
-}
+
     .div__elige--op3 {
       padding-bottom: 2rem;
     }
 
     .texto__elige--op3 {
-      padding-right: 0rem;
+      padding:0 1rem;
+      font-size: medium;
     }
   }
 }

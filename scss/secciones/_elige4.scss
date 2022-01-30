@@ -80,7 +80,7 @@
 @media (max-width: 768px) {
   .main__elige--op4 {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.4fr 0.2fr 0.5fr 0.4fr;
+    grid-template-rows: 0.4fr 0.3fr 0.5fr 0.9fr;
     gap: 30px 0px;
     grid-template-areas:
       "img"
@@ -134,7 +134,8 @@
         width: 100vw;
 
         .boton__elige {
-            @include botonElige(80vw)
+            @include botonElige(80vw);
+            margin: 0.1rem;
           
         }
       }
@@ -144,31 +145,30 @@
 
 @media (max-width: 480px) {
   .main__elige--op4 {
-    grid-template-rows: 0.3fr 0.1fr 0.3fr 1fr;
+    grid-template-rows: 0.3fr 0.1fr 0.5fr 1fr;
     gap: 25px 0px;
 
     .glosario--op4 {
-      .glosario--op4 p {
-        padding: 0 2rem;
-      }
+    
+      .glosario__estructura {
+        
 
-      .glosario p {
-        padding: 0 2rem;
-        padding-bottom: 1rem;
+        .glosario__div{
+          margin-top: 0;
+          .resaltador{
+            font-size: medium;
+          }
+          .definicion__glosario{
+            @include definicionGlosario (small, 2px);
+          }
+        }
       }
 
       .elige__glosario--titulo {
-        font-size: x-large;
         margin-top: 1rem;
+        margin-bottom: 1rem;
       }
 
-      .glosario__estructura {
-        font-size: small;
-
-        .glosario__estructura div {
-          margin-top: 0;
-        }
-      }
     }
 
     .texto__elige--op4 {

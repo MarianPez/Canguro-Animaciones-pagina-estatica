@@ -347,21 +347,22 @@ input {
   .main .carousel-caption {
     padding-bottom: 20%; }
     .main .carousel-caption .resaltador {
-      font-family: "Carter One", cursive; }
+      font-family: "Carter One", cursive;
+      font-size: 10vw; }
 
 @media (max-width: 768px) {
   .main {
-    grid-template-rows: 0.1fr 0.2fr 1fr 0.3fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.3fr 0.293fr 0.2fr 0.1fr;
     gap: 150px 0px; }
     .main .carousel-caption {
-      padding-bottom: 10%; } }
+      padding-bottom: 15%; } }
 
 @media (max-width: 480px) {
   .main {
     grid-template-rows: 0fr 0.2fr 1fr 0.1fr 0.2fr 0.2fr;
     gap: 100px 0px; }
     .main .carousel-caption {
-      padding-bottom: 0%; } }
+      padding-bottom: 10%; } }
 
 .main__quienessomos {
   display: flex;
@@ -429,7 +430,7 @@ input {
   text-align: center;
   grid-area: main__nuestrasfiestas; }
   .main__nuestrasfiestas .nuestrasfiestas__titulo {
-    font-size: 8rem;
+    font-size: 9vw;
     font-family: "Carter One", cursive; }
   .main__nuestrasfiestas .nuestrasfiestas--display__flex {
     display: flex;
@@ -579,7 +580,7 @@ input {
   .main__dondeestamos .fuente_dondeestamos {
     font-family: "Carter One", cursive;
     margin-bottom: 4rem;
-    font-size: 4rem; }
+    font-size: 9vw; }
   .main__dondeestamos #iframe__dondeestamos {
     width: 80vw; }
 
@@ -699,12 +700,11 @@ input {
 @media (max-width: 768px) {
   .main__elige {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.4fr 0.5fr 0.5fr 1.1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 15px 0px;
     grid-template-areas: "img" "texto" "glosario" "botones"; }
     .main__elige .glosario .elige__glosario--titulo {
-      margin-top: 0;
-      font-size: xx-large; }
+      margin-top: 0; }
     .main__elige .glosario .glosario__estructura {
       flex-direction: row;
       justify-content: center;
@@ -736,7 +736,8 @@ input {
           margin: 0.8rem;
           font-family: 'Open Sans', sans-serif;
           font-weight: bolder;
-          padding-bottom: 1rem; }
+          padding-bottom: 1rem;
+          margin: 0.1rem; }
   .linkJuego {
     font-size: 1.1rem; } }
 
@@ -750,7 +751,6 @@ input {
         padding: 0 2rem;
         padding-bottom: 1rem; }
       .main__elige .glosario .elige__glosario--titulo {
-        font-size: x-large;
         margin-top: 1rem; }
       .main__elige .glosario .glosario__estructura .glosario__div {
         margin-top: 2rem; }
@@ -832,10 +832,12 @@ input {
 @media (max-width: 768px) {
   .main__elige--op2 {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.6fr 0.2fr 0.2fr 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 50px 0px;
     grid-template-areas: "img" "texto" "glosario" "botones";
     align-content: flex-start; }
+    .main__elige--op2 .texto__elige--op2 {
+      font-size: 1.2rem; }
     .main__elige--op2 .img__elige--op2 .img__elige--img2 {
       width: 100vw;
       height: 25rem; }
@@ -861,7 +863,8 @@ input {
         margin: 0.8rem;
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
-        padding-bottom: 1rem; } }
+        padding-bottom: 1rem;
+        margin: 0.1rem; } }
 
 @media (max-width: 480px) {
   .main__elige--op2 {
@@ -881,16 +884,16 @@ input {
           font-size: small;
           font-weight: bolder;
           padding: 0 2px; }
-  .img__elige--op2 .img__elige--img2 {
-    height: 13rem; }
-  .div__elige--op2 .botonera__elige--op2 {
-    margin-bottom: 2rem; }
-    .div__elige--op2 .botonera__elige--op2 .boton__elige {
-      width: 60vw;
-      margin-left: 0.2rem; }
-  .texto__elige--op2 {
-    padding-right: 0rem;
-    font-size: larger; } }
+    .main__elige--op2 .texto__elige--op2 {
+      font-size: medium;
+      padding-left: 1rem; }
+    .main__elige--op2 .img__elige--op2 .img__elige--img2 {
+      height: 13rem; }
+    .main__elige--op2 .div__elige--op2 .botonera__elige--op2 {
+      margin-bottom: 2rem; }
+      .main__elige--op2 .div__elige--op2 .botonera__elige--op2 .boton__elige {
+        width: 60vw;
+        margin-left: 0.2rem; } }
 
 .main__elige--op3 {
   display: grid;
@@ -949,10 +952,12 @@ input {
 @media (max-width: 768px) {
   .main__elige--op3 {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.2fr 0.3fr 0.5fr 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 50px 0px;
     grid-template-areas: "img" "texto" "glosario" "botones";
     align-content: stretch; }
+    .main__elige--op3 .texto__elige--op3 {
+      font-size: 1.2rem; }
     .main__elige--op3 .glosario--op3 .glosario__estructura--op2 {
       display: flex;
       flex-direction: row;
@@ -971,7 +976,8 @@ input {
       margin: 0.8rem;
       font-family: 'Open Sans', sans-serif;
       font-weight: bolder;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      margin: 0.1rem; }
     .main__elige--op3 .img__elige--op3 .img__elige--img3 {
       width: 100vw;
       height: 25rem; } }
@@ -979,7 +985,7 @@ input {
 @media (max-width: 480px) {
   .main__elige--op3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.2fr 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.2fr 0.5fr 1fr;
     gap: 50px 0px;
     grid-template-areas: "img" "texto" "glosario" "botones"; }
     .main__elige--op3 .img__elige--op3 .img__elige--img3 {
@@ -996,7 +1002,8 @@ input {
     .main__elige--op3 .div__elige--op3 {
       padding-bottom: 2rem; }
     .main__elige--op3 .texto__elige--op3 {
-      padding-right: 0rem; } }
+      padding: 0 1rem;
+      font-size: medium; } }
 
 .main__elige--op4 {
   display: grid;
@@ -1067,7 +1074,7 @@ input {
 @media (max-width: 768px) {
   .main__elige--op4 {
     grid-template-columns: 5fr;
-    grid-template-rows: 0.4fr 0.2fr 0.5fr 0.4fr;
+    grid-template-rows: 0.4fr 0.3fr 0.5fr 0.9fr;
     gap: 30px 0px;
     grid-template-areas: "img" "texto" "glosario" "botones"; }
     .main__elige--op4 .img__elige--op4 {
@@ -1104,24 +1111,24 @@ input {
           margin: 0.8rem;
           font-family: 'Open Sans', sans-serif;
           font-weight: bolder;
-          padding-bottom: 1rem; } }
+          padding-bottom: 1rem;
+          margin: 0.1rem; } }
 
 @media (max-width: 480px) {
   .main__elige--op4 {
-    grid-template-rows: 0.3fr 0.1fr 0.3fr 1fr;
+    grid-template-rows: 0.3fr 0.1fr 0.5fr 1fr;
     gap: 25px 0px; }
-    .main__elige--op4 .glosario--op4 .glosario--op4 p {
-      padding: 0 2rem; }
-    .main__elige--op4 .glosario--op4 .glosario p {
-      padding: 0 2rem;
-      padding-bottom: 1rem; }
+    .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div {
+      margin-top: 0; }
+      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .resaltador {
+        font-size: medium; }
+      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .definicion__glosario {
+        font-size: small;
+        font-weight: bolder;
+        padding: 0 2px; }
     .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
-      font-size: x-large;
-      margin-top: 1rem; }
-    .main__elige--op4 .glosario--op4 .glosario__estructura {
-      font-size: small; }
-      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__estructura div {
-        margin-top: 0; }
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
     .main__elige--op4 .texto__elige--op4 {
       font-size: 1rem;
       padding: 0 0rem; }
