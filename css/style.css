@@ -204,14 +204,14 @@ input {
     .portada .izq-arriba:hover {
       transform: scale(1.1) translate(20px);
       padding-top: 2rem;
-      transition-duration: 0.3s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .der-arriba {
     grid-area: der-arriba; }
     .portada .der-arriba:hover {
       transform: scale(1.1) translate(-10px);
       padding-top: 5rem;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .centro {
     grid-area: centro;
@@ -227,14 +227,14 @@ input {
     .portada .izq-abajo:hover {
       transform: scale(1.1) translate(10px);
       padding-top: 5rem;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .der-abajo {
     grid-area: der-abajo; }
     .portada .der-abajo:hover {
       transform: scale(1.1) translate(-30px);
       padding-top: 2rem;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
 
 .der-borde {

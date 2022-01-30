@@ -21,7 +21,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada (1.1, 20px, 2rem, 0.3s, 3rem)
+      @include hoverPortada (1.1, 20px, 2rem, 0.5s, 3rem)
     }
   }
 
@@ -30,7 +30,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada (1.1, -10px, 5rem, 0.4s, 3rem);
+      @include hoverPortada (1.1, -10px, 5rem, 0.5s, 3rem);
     }
   }
 
@@ -54,7 +54,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada (1.1, 10px, 5rem, 0.4s, 3rem);
+      @include hoverPortada (1.1, 10px, 5rem, 0.5s, 3rem);
     }
   }
 
@@ -63,7 +63,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada(1.1, -30px, 2rem, 0.4s, 3rem);
+      @include hoverPortada(1.1, -30px, 2rem, 0.5s, 3rem);
     }
   }
 }
