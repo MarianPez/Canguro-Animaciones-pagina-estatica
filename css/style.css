@@ -452,7 +452,7 @@ input {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      font-size: x-large;
+      font-size: large;
       padding: 0 10px; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div p {
         font-family: 'Open Sans', sans-serif;
@@ -473,7 +473,8 @@ input {
     flex-direction: column; }
     .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
       width: 80vw;
-      height: 100vh; }
+      height: 100vh;
+      font-size: x-large; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
         width: 40vw; } }
 
