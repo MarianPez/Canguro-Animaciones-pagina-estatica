@@ -21,7 +21,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada (1.1, 20px, 2rem, 0.3s, 3rem)
+      @include hoverPortada (1.1, 20px, 2rem, 0.5s, 3rem)
     }
   }
 
@@ -30,7 +30,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada (1.1, -10px, 5rem, 0.4s, 3rem);
+      @include hoverPortada (1.1, -10px, 5rem, 0.5s, 3rem);
     }
   }
 
@@ -54,7 +54,7 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada (1.1, 10px, 5rem, 0.4s, 3rem);
+      @include hoverPortada (1.1, 10px, 5rem, 0.5s, 3rem);
     }
   }
 
@@ -63,19 +63,90 @@
     @extend %elementosPortada;
 
     &:hover {
-      @include hoverPortada(1.1, -30px, 2rem, 0.4s, 3rem);
+      @include hoverPortada(1.1, -30px, 2rem, 0.5s, 3rem);
     }
   }
-}
+
 
 
 .der-borde {
   writing-mode: vertical-lr;
+ .animacion__borde{
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: movimiento;
+  overflow: hidden;
+
+  @keyframes movimiento {
+    from {
+      margin-top: 0%;
+    }
+    to {
+      margin-top: 100%;
+    }
+  }
 }
+}
+
 
 
 .izq-borde {
   writing-mode: vertical-lr;
+  .animacion__borde--3{
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: movimientoDos;
+    overflow: hidden;
+  
+    @keyframes movimientoDos {
+      from {
+        margin-top: 100%;
+      }
+      to {
+        margin-top: 0%;
+      }
+    }
+  }
+}
+.borde-superior{
+  .animacion__borde--2{
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-name: movimientoTres;
+      overflow: hidden;
+      white-space: nowrap;
+    
+      @keyframes movimientoTres {
+        from {
+          margin-left: 0%;
+        }
+        to {
+          margin-left: 100%;
+        }
+      }
+    }
+}
+
+.borde-inferior{
+  .animacion__borde--4{
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: movimientoCuatro;
+    overflow: hidden;
+    white-space: nowrap;
+  
+    @keyframes movimientoCuatro {
+      from {
+        margin-left: 100%;
+      }
+      to {
+        margin-left: 0%;
+      }
+    }
+}
+}
+
+
 }
 
 
@@ -95,7 +166,7 @@
       display: none;
     }
 
-
+ 
 
     .izq-arriba {
       @include elementosQueryPortada;

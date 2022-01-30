@@ -204,14 +204,14 @@ input {
     .portada .izq-arriba:hover {
       transform: scale(1.1) translate(20px);
       padding-top: 2rem;
-      transition-duration: 0.3s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .der-arriba {
     grid-area: der-arriba; }
     .portada .der-arriba:hover {
       transform: scale(1.1) translate(-10px);
       padding-top: 5rem;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .centro {
     grid-area: centro;
@@ -227,21 +227,65 @@ input {
     .portada .izq-abajo:hover {
       transform: scale(1.1) translate(10px);
       padding-top: 5rem;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .der-abajo {
     grid-area: der-abajo; }
     .portada .der-abajo:hover {
       transform: scale(1.1) translate(-30px);
       padding-top: 2rem;
-      transition-duration: 0.4s;
+      transition-duration: 0.5s;
       font-size: 3rem; }
+  .portada .der-borde {
+    writing-mode: vertical-lr; }
+    .portada .der-borde .animacion__borde {
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-name: movimiento;
+      overflow: hidden; }
 
-.der-borde {
-  writing-mode: vertical-lr; }
+@keyframes movimiento {
+  from {
+    margin-top: 0%; }
+  to {
+    margin-top: 100%; } }
+  .portada .izq-borde {
+    writing-mode: vertical-lr; }
+    .portada .izq-borde .animacion__borde--3 {
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-name: movimientoDos;
+      overflow: hidden; }
 
-.izq-borde {
-  writing-mode: vertical-lr; }
+@keyframes movimientoDos {
+  from {
+    margin-top: 100%; }
+  to {
+    margin-top: 0%; } }
+  .portada .borde-superior .animacion__borde--2 {
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: movimientoTres;
+    overflow: hidden;
+    white-space: nowrap; }
+
+@keyframes movimientoTres {
+  from {
+    margin-left: 0%; }
+  to {
+    margin-left: 100%; } }
+  .portada .borde-inferior .animacion__borde--4 {
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: movimientoCuatro;
+    overflow: hidden;
+    white-space: nowrap; }
+
+@keyframes movimientoCuatro {
+  from {
+    margin-left: 100%; }
+  to {
+    margin-left: 0%; } }
 
 @media (max-width: 768px) {
   .portada {
