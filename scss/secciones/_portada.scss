@@ -66,92 +66,16 @@
       @include hoverPortada(1.1, -30px, 2rem, 0.5s, 3rem);
     }
   }
-
+}
 
 
 .der-borde {
   writing-mode: vertical-lr;
- .animacion__borde{
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-name: movimiento;
-  overflow: hidden;
-  transition-timing-function: linear;
-  white-space: nowrap;
-  
-
-  @keyframes movimiento {
-    from {
-      margin-top: 100%;
-    }
-    to {
-      margin-top: 0%;
-    }
-  }
 }
-}
-
 
 
 .izq-borde {
   writing-mode: vertical-lr;
-  .animacion__borde--3{
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-name: movimientoDos;
-    overflow: hidden;
-    transition-timing-function: linear;
-    white-space: nowrap;
-    @keyframes movimientoDos {
-      from {
-        margin-top: 0%;
-      }
-      to {
-        margin-top: 100%;
-      }
-    }
-  }
-}
-.borde-superior{
-  .animacion__borde--2{
-      animation-duration: 50s;
-      animation-iteration-count: infinite;
-      animation-name: movimientoTres;
-      overflow: hidden;
-      white-space: nowrap;
-      transition-timing-function: linear;
-      
-      @keyframes movimientoTres {
-        from {
-          margin-left: 100%;
-        }
-        to {
-          margin-left: 0%;
-        }
-      }
-    }
-}
-
-.borde-inferior{
-  .animacion__borde--4{
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    animation-name: movimientoCuatro;
-    overflow: hidden;
-    white-space: nowrap;
-    transition-timing-function: linear;
-    @keyframes movimientoCuatro {
-      from {
-        margin-left: 0%;
-      }
-      to {
-        margin-left: 100%;
-      }
-    }
-}
-}
-
-
 }
 
 
@@ -171,7 +95,7 @@
       display: none;
     }
 
- 
+
 
     .izq-arriba {
       @include elementosQueryPortada;
