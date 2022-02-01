@@ -1,0 +1,34 @@
+$bordesPortada: (
+    der-borde: der-borde,
+    borde-superior: borde-superior,
+    izq-borde: izq-borde,
+    borde-inferior: borde-inferior
+);
+
+$textoElige: (
+   texto__elige: 5.4rem,
+    texto__elige--op2: 2rem,
+     texto__elige--op3: 0rem,
+    texto__elige--op4: 5rem,
+ );
+
+@each $clases, $grid in $bordesPortada {
+    .#{$clases}{
+        grid-area: $grid;
+        border: solid 2px;
+        background-color: $naranjaOscuro;
+        font-family: $fuenteTitulos;
+    }
+};
+
+
+  @each $texto, $padding in $textoElige {
+     .#{$texto}{
+    grid-area: texto;
+   align-self: center;
+    text-align: center;
+   font-size: x-large;
+    padding-right: $padding;
+    @include fuenteGeneral
+ }
+  };
