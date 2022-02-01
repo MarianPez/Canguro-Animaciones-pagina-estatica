@@ -202,46 +202,50 @@ input {
   .portada .izq-arriba {
     grid-area: izq-arriba; }
     .portada .izq-arriba:hover {
-      transform: scale(1.1) translate(20px);
+      transform: scale(1) translate(0px);
       padding-top: 2rem;
       transition-duration: 0.5s;
       font-size: 3rem; }
   .portada .der-arriba {
     grid-area: der-arriba; }
     .portada .der-arriba:hover {
-      transform: scale(1.1) translate(-10px);
+      transform: scale(1) translate(0px);
       padding-top: 5rem;
-      transition-duration: 0.5s;
+      transition-duration: 0.9s;
       font-size: 3rem; }
   .portada .centro {
     grid-area: centro;
     border: solid 2px; }
     .portada .centro:hover {
       transform: scale(1.1);
-      transition-duration: 0.3s; }
+      transition-duration: 0.5s; }
     .portada .centro .logo__portada {
       width: 100%;
       height: 100%; }
   .portada .izq-abajo {
     grid-area: izq-abajo; }
     .portada .izq-abajo:hover {
-      transform: scale(1.1) translate(10px);
+      transform: scale(1) translate(0px);
       padding-top: 5rem;
-      transition-duration: 0.5s;
+      transition-duration: 0.9s;
       font-size: 3rem; }
   .portada .der-abajo {
     grid-area: der-abajo; }
     .portada .der-abajo:hover {
-      transform: scale(1.1) translate(-30px);
+      transform: scale(1) translate(0px);
       padding-top: 2rem;
       transition-duration: 0.5s;
       font-size: 3rem; }
 
 .der-borde {
-  writing-mode: vertical-lr; }
+  writing-mode: vertical-lr;
+  text-align: end; }
 
 .izq-borde {
   writing-mode: vertical-lr; }
+
+.borde-inferior {
+  text-align: end; }
 
 @media (max-width: 768px) {
   .portada {
@@ -345,10 +349,10 @@ input {
   gap: 250px 0px;
   grid-template-areas: "index__presentacion" "main__quienessomos" "main__nuestrasfiestas" "main__jugaconnosotros" "main__contactanos" "main__dondeestamos"; }
   .main .carousel-caption {
-    padding-bottom: 20%; }
+    padding-bottom: 40%; }
     .main .carousel-caption .resaltador {
       font-family: "Carter One", cursive;
-      font-size: 10vw; }
+      font-size: 6vw; }
 
 @media (max-width: 768px) {
   .main {

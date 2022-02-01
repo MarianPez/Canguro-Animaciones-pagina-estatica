@@ -11,17 +11,20 @@
     "main__contactanos"
     "main__dondeestamos";
 
+
+  
+
   .carousel-caption {
-    padding-bottom: 20%;
+    padding-bottom: 40%;
 
 
     
     .resaltador {
       font-family: $fuenteTitulos;
-      font-size: 10vw;
+      font-size: 6vw;
     }
 
-
+  
   }
 }
 
@@ -29,6 +32,7 @@
   .main {
     grid-template-rows: 0.1fr 0.2fr 0.3fr 0.293fr 0.2fr 0.1fr;
     gap: 150px 0px;
+
 
     .carousel-caption {
       padding-bottom: 15%;
