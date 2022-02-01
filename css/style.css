@@ -633,7 +633,7 @@ input {
   grid-template-columns: 5fr 1fr;
   grid-template-rows: 0.5fr 0.4fr 0.9fr;
   gap: 0px 23px;
-  grid-template-areas: "img glosario" "texto glosario" "botones glosario";
+  grid-template-areas: "img glosario" "texto glosario" "botones glosario";
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
@@ -702,7 +702,7 @@ input {
     grid-template-columns: 5fr;
     grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 15px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones"; }
+    grid-template-areas: "img" "texto" "glosario" "botones"; }
     .main__elige .glosario .elige__glosario--titulo {
       margin-top: 0; }
     .main__elige .glosario .glosario__estructura {
@@ -781,7 +781,7 @@ input {
   grid-auto-rows: 1fr;
   gap: 0px 20px;
   grid-auto-flow: row;
-  grid-template-areas: "img img" "glosario texto" "glosario botones";
+  grid-template-areas: "img img" "glosario texto" "glosario botones";
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -834,7 +834,7 @@ input {
     grid-template-columns: 5fr;
     grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 50px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones";
+    grid-template-areas: "img" "texto" "glosario" "botones";
     align-content: flex-start; }
     .main__elige--op2 .texto__elige--op2 {
       font-size: 1.2rem; }
@@ -871,7 +871,7 @@ input {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0.2fr 0.2fr 1fr;
     gap: 50px 0px;
-    grid-template-areas: "img" "glosario" "texto" "glosario" "botones";
+    grid-template-areas: "img" "glosario" "texto" "glosario" "botones";
     justify-content: stretch;
     align-items: stretch; }
     .main__elige--op2 .glosario--op2 .glosario__estructura--op2 {
@@ -903,7 +903,7 @@ input {
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "img img" "texto glosario" "botones glosario";
+  grid-template-areas: "img img" "texto glosario" "botones glosario";
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -954,7 +954,7 @@ input {
     grid-template-columns: 5fr;
     grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
     gap: 50px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones";
+    grid-template-areas: "img" "texto" "glosario" "botones";
     align-content: stretch; }
     .main__elige--op3 .texto__elige--op3 {
       font-size: 1.2rem; }
@@ -987,7 +987,7 @@ input {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0.2fr 0.5fr 1fr;
     gap: 50px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones"; }
+    grid-template-areas: "img" "texto" "glosario" "botones"; }
     .main__elige--op3 .img__elige--op3 .img__elige--img3 {
       width: 100vw;
       height: 17rem; }
@@ -1012,7 +1012,7 @@ input {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 0.5fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "glosario img" "glosario texto" "glosario botones";
+  grid-template-areas: "glosario img" "glosario texto" "glosario botones";
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
@@ -1076,7 +1076,7 @@ input {
     grid-template-columns: 5fr;
     grid-template-rows: 0.4fr 0.3fr 0.5fr 0.9fr;
     gap: 30px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones"; }
+    grid-template-areas: "img" "texto" "glosario" "botones"; }
     .main__elige--op4 .img__elige--op4 {
       padding-left: 0; }
       .main__elige--op4 .img__elige--op4 .img__elige--img4 {
@@ -1150,7 +1150,7 @@ input {
   grid-template-columns: 0.4fr 1fr 0.4fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "banda1 img__fiesta img__fiesta" "banda1 banda2 banda2" "img__fiesta2 img__fiesta2 banda3";
+  grid-template-areas: "banda1 img__fiesta img__fiesta" "banda1 banda2 banda2" "img__fiesta2 img__fiesta2 banda3";
   height: 50rem; }
 
 .fiesta__letra {
