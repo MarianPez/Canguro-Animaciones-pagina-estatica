@@ -618,6 +618,8 @@ input {
   .footer .secciones__links {
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder; }
+  .footer .secciones__links:hover {
+    color: #fe7f2d; }
 
 .juego__main {
   height: 100vh;
