@@ -35,7 +35,7 @@
 
 
     .carousel-caption {
-      padding-bottom: 15%;
+      padding-bottom: 30%;
     }
   }
 }
@@ -46,7 +46,11 @@
     gap: 100px 0px;
 
     .carousel-caption {
-      padding-bottom: 10%;
+      padding-bottom: 40%;
+
+      .subtitulo__carousel{
+        display: none;
+      }
     }
   }
 }

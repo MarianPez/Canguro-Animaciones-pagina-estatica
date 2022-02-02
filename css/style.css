@@ -196,7 +196,7 @@ input {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "borde-superior borde-superior borde-superior borde-superior der-borde" "izq-borde izq-arriba izq-arriba der-arriba der-borde" "izq-borde izq-abajo centro der-arriba der-borde" "izq-borde izq-abajo der-abajo der-abajo der-borde" "izq-borde borde-inferior borde-inferior borde-inferior borde-inferior";
+  grid-template-areas: "borde-superior borde-superior borde-superior borde-superior der-borde" "izq-borde izq-arriba izq-arriba der-arriba der-borde" "izq-borde izq-abajo centro der-arriba der-borde" "izq-borde izq-abajo der-abajo der-abajo der-borde" "izq-borde borde-inferior borde-inferior borde-inferior borde-inferior";
   width: 100%;
   height: 100vh; }
   .portada .izq-arriba {
@@ -310,11 +310,8 @@ input {
   background-color: #fcca46; }
   .header__bootstrap .navbar-nav {
     font-family: "Carter One", cursive; }
-  .header__bootstrap .nav-link:hover {
-    font-size: xx-large; }
   .header__bootstrap .nav-item:hover {
-    color: #fe7f2d;
-    font-size: xx-large; }
+    color: #fe7f2d; }
 
 .header {
   background-color: #fcca46;
@@ -347,7 +344,7 @@ input {
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 0.3fr 0.3fr 0.4fr 0.4fr 0.6fr;
   gap: 250px 0px;
-  grid-template-areas: "index__presentacion" "main__quienessomos" "main__nuestrasfiestas" "main__jugaconnosotros" "main__contactanos" "main__dondeestamos"; }
+  grid-template-areas: "index__presentacion" "main__quienessomos" "main__nuestrasfiestas" "main__jugaconnosotros" "main__contactanos" "main__dondeestamos"; }
   .main .carousel-caption {
     padding-bottom: 40%; }
     .main .carousel-caption .resaltador {
@@ -359,14 +356,16 @@ input {
     grid-template-rows: 0.1fr 0.2fr 0.3fr 0.293fr 0.2fr 0.1fr;
     gap: 150px 0px; }
     .main .carousel-caption {
-      padding-bottom: 15%; } }
+      padding-bottom: 30%; } }
 
 @media (max-width: 480px) {
   .main {
     grid-template-rows: 0fr 0.2fr 1fr 0.1fr 0.2fr 0.2fr;
     gap: 100px 0px; }
     .main .carousel-caption {
-      padding-bottom: 10%; } }
+      padding-bottom: 40%; }
+      .main .carousel-caption .subtitulo__carousel {
+        display: none; } }
 
 .main__quienessomos {
   display: flex;
@@ -434,7 +433,7 @@ input {
   text-align: center;
   grid-area: main__nuestrasfiestas; }
   .main__nuestrasfiestas .nuestrasfiestas__titulo {
-    font-size: 9vw;
+    font-size: 6vw;
     font-family: "Carter One", cursive; }
   .main__nuestrasfiestas .nuestrasfiestas--display__flex {
     display: flex;
@@ -564,8 +563,8 @@ input {
 
 .contactanos {
   background-color: #87d68d;
-  height: 140vh;
-  justify-content: space-around; }
+  height: 130vh;
+  justify-content: center; }
   .contactanos .resaltador {
     font-family: "Carter One", cursive; }
   .contactanos .h3,
@@ -585,7 +584,7 @@ input {
   .main__dondeestamos .fuente_dondeestamos {
     font-family: "Carter One", cursive;
     margin-bottom: 4rem;
-    font-size: 9vw; }
+    font-size: 6vw; }
   .main__dondeestamos #iframe__dondeestamos {
     width: 80vw; }
 
