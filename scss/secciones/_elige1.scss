@@ -74,7 +74,11 @@
     align-content: center;
 
     .boton__elige {
-        @include botonElige(30vw)
+        @include botonElige(30vw);
+
+        .btn-primary:hover {
+          font-size: large;
+      }
     }
   }
 }

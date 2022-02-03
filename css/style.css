@@ -699,6 +699,8 @@ input {
       font-family: 'Open Sans', sans-serif;
       font-weight: bolder;
       padding-bottom: 1rem; }
+      .div__elige .botonera__elige .boton__elige .btn-primary:hover {
+        font-size: large; }
 
 .linkJuego {
   font-size: 1.3rem; }
@@ -834,6 +836,8 @@ input {
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
         padding-bottom: 1rem; }
+        .main__elige--op2 .div__elige--op2 .botonera__elige--op2 .boton__elige .btn-primary:hover {
+          font-size: large; }
 
 @media (max-width: 768px) {
   .main__elige--op2 {
@@ -952,6 +956,8 @@ input {
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
         padding-bottom: 1rem; }
+        .main__elige--op3 .div__elige--op3 .botonera__elige--op3 .boton__elige .btn-primary:hover {
+          font-size: large; }
   .main__elige--op3 .texto__elige--op3 {
     padding-left: 1rem; }
 
@@ -1074,6 +1080,8 @@ input {
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
         padding-bottom: 1rem; }
+        .main__elige--op4 .div__elige--op4 .botonera__elige--op4 .boton__elige .btn-primary:hover {
+          font-size: large; }
   .main__elige--op4 .texto__elige--op4 {
     padding-left: 5rem; }
 
