@@ -701,7 +701,8 @@ input {
       font-weight: bolder;
       padding-bottom: 1rem; }
       .div__elige .botonera__elige .boton__elige .btn-primary:hover {
-        font-size: large; }
+        font-size: large;
+        background-color: #87d68d; }
 
 .linkJuego {
   font-size: 1.3rem; }
@@ -906,258 +907,6 @@ input {
       .main__elige--op2 .div__elige--op2 .botonera__elige--op2 .boton__elige {
         width: 60vw;
         margin-left: 0.2rem; } }
-
-.main__elige--op3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.8fr 0.5fr 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "img img" "texto glosario" "botones glosario";
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder; }
-  .main__elige--op3 .glosario--op3 {
-    grid-area: glosario;
-    background-color: #87d68d;
-    justify-content: stretch;
-    justify-self: stretch;
-    align-self: stretch;
-    text-align: center;
-    font-family: "Carter One", cursive; }
-    .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 {
-      margin-top: 18rem;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bolder; }
-      .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 .resaltador {
-        font-family: "Carter One", cursive; }
-      .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 .definicion__glosario {
-        font-size: x-large;
-        font-weight: bolder;
-        padding: 0 50px; }
-  .main__elige--op3 .img__elige--op3 {
-    grid-area: img; }
-    .main__elige--op3 .img__elige--op3 .img__elige--img3 {
-      width: 98.8vw;
-      height: 40rem; }
-  .main__elige--op3 .div__elige--op3 {
-    padding-bottom: 6rem;
-    grid-area: botones; }
-    .main__elige--op3 .div__elige--op3 .botonera__elige--op3 {
-      display: flex;
-      flex-direction: column; }
-      .main__elige--op3 .div__elige--op3 .botonera__elige--op3 .boton__elige {
-        text-align: center;
-        width: 30vw;
-        margin: 0.8rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bolder;
-        padding-bottom: 1rem; }
-        .main__elige--op3 .div__elige--op3 .botonera__elige--op3 .boton__elige .btn-primary:hover {
-          font-size: large; }
-  .main__elige--op3 .texto__elige--op3 {
-    padding-left: 1rem; }
-
-@media (max-width: 768px) {
-  .main__elige--op3 {
-    grid-template-columns: 5fr;
-    grid-template-rows: 0.4fr 0.4fr 0.5fr 1fr;
-    gap: 50px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones";
-    align-content: stretch; }
-    .main__elige--op3 .texto__elige--op3 {
-      font-size: 1.2rem; }
-    .main__elige--op3 .glosario--op3 .glosario__estructura--op2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 {
-        margin-top: 2rem; }
-        .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 .resaltador {
-          font-size: 1.5rem; }
-        .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 .definicion__glosario {
-          font-size: large;
-          font-weight: bolder;
-          padding: 0 10px; }
-    .main__elige--op3 .div__elige--op3 .botonera__elige--op3 .boton__elige {
-      text-align: center;
-      width: 80vw;
-      margin: 0.8rem;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bolder;
-      padding-bottom: 1rem;
-      margin: 0.1rem; }
-    .main__elige--op3 .img__elige--op3 .img__elige--img3 {
-      width: 100vw;
-      height: 25rem; } }
-
-@media (max-width: 480px) {
-  .main__elige--op3 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.2fr 0.5fr 1fr;
-    gap: 50px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones"; }
-    .main__elige--op3 .img__elige--op3 .img__elige--img3 {
-      width: 100vw;
-      height: 17rem; }
-    .main__elige--op3 .glosario--op3 {
-      width: 100vw; }
-      .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 .resaltador {
-        font-size: medium; }
-      .main__elige--op3 .glosario--op3 .glosario__estructura--op2 .glosario__div--op2 .definicion__glosario {
-        font-size: small;
-        font-weight: bolder;
-        padding: 0 2px; }
-    .main__elige--op3 .div__elige--op3 {
-      padding-bottom: 2rem; }
-    .main__elige--op3 .texto__elige--op3 {
-      padding: 0 1rem;
-      font-size: medium; } }
-
-.main__elige--op4 {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas: "glosario img" "glosario texto" "glosario botones";
-  justify-content: stretch;
-  align-items: stretch;
-  align-content: stretch;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder; }
-  .main__elige--op4 .glosario--op4 {
-    grid-area: glosario;
-    background-color: #87d68d;
-    justify-content: stretch;
-    justify-self: stretch;
-    align-self: stretch;
-    text-align: center;
-    font-family: "Carter One", cursive; }
-    .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
-      margin-top: 4rem; }
-    .main__elige--op4 .glosario--op4 .glosario__estructura {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      font-size: larger;
-      padding-bottom: 5rem; }
-      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div {
-        margin-top: 15rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bolder; }
-        .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .resaltador {
-          font-family: "Carter One", cursive; }
-        .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .definicion__glosario {
-          font-size: large;
-          font-weight: bolder;
-          padding: 0 10px; }
-  .main__elige--op4 .img__elige--op4 {
-    width: 0rem;
-    padding-left: 5rem; }
-    .main__elige--op4 .img__elige--op4 .img__elige--img4 {
-      width: 70vw; }
-  .main__elige--op4 .div__elige--op4 {
-    grid-area: botones;
-    align-self: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .main__elige--op4 .div__elige--op4 .botonera__elige--op4 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center; }
-      .main__elige--op4 .div__elige--op4 .botonera__elige--op4 .boton__elige {
-        text-align: center;
-        width: 30vw;
-        margin: 0.8rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bolder;
-        padding-bottom: 1rem; }
-        .main__elige--op4 .div__elige--op4 .botonera__elige--op4 .boton__elige .btn-primary:hover {
-          font-size: large; }
-  .main__elige--op4 .texto__elige--op4 {
-    padding-left: 5rem; }
-
-@media (max-width: 768px) {
-  .main__elige--op4 {
-    grid-template-columns: 5fr;
-    grid-template-rows: 0.4fr 0.3fr 0.5fr 0.9fr;
-    gap: 30px 0px;
-    grid-template-areas: "img" "texto" "glosario" "botones"; }
-    .main__elige--op4 .img__elige--op4 {
-      padding-left: 0; }
-      .main__elige--op4 .img__elige--op4 .img__elige--img4 {
-        width: 100vw; }
-    .main__elige--op4 .texto__elige--op4 {
-      font-size: 1.4rem; }
-    .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
-      margin-top: 0; }
-    .main__elige--op4 .glosario--op4 .glosario__estructura {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      font-size: medium;
-      padding: 0 15px; }
-      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div {
-        margin-top: 2rem; }
-        .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .resaltador {
-          font-size: 1.5rem; }
-        .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .definicion__glosario {
-          font-size: large;
-          font-weight: bolder;
-          padding: 0 10px; }
-    .main__elige--op4 .div__elige--op4 {
-      align-self: center; }
-      .main__elige--op4 .div__elige--op4 .botonera__elige--op4 {
-        flex-wrap: wrap;
-        margin-bottom: 4rem;
-        width: 100vw; }
-        .main__elige--op4 .div__elige--op4 .botonera__elige--op4 .boton__elige {
-          text-align: center;
-          width: 80vw;
-          margin: 0.8rem;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: bolder;
-          padding-bottom: 1rem;
-          margin: 0.1rem; } }
-
-@media (max-width: 480px) {
-  .main__elige--op4 {
-    grid-template-rows: 0.3fr 0.1fr 0.5fr 1fr;
-    gap: 25px 0px; }
-    .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div {
-      margin-top: 0; }
-      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .resaltador {
-        font-size: medium; }
-      .main__elige--op4 .glosario--op4 .glosario__estructura .glosario__div .definicion__glosario {
-        font-size: small;
-        font-weight: bolder;
-        padding: 0 2px; }
-    .main__elige--op4 .glosario--op4 .elige__glosario--titulo {
-      margin-top: 1rem;
-      margin-bottom: 1rem; }
-    .main__elige--op4 .texto__elige--op4 {
-      font-size: 1rem;
-      padding: 0 0rem; }
-      .main__elige--op4 .texto__elige--op4 .texto__elige--op4 p {
-        padding: 0 1rem;
-        text-align: center; }
-    .main__elige--op4 .img__elige--op4 {
-      width: 0rem;
-      padding-left: 0rem; }
-      .main__elige--op4 .img__elige--op4 .img__elige--img4 {
-        padding-left: 0rem; }
-    .main__elige--op4 .div__elige--op4 .botonera__elige--op4 {
-      margin-left: 0rem; } }
 
 .main__fiesta {
   display: grid;
