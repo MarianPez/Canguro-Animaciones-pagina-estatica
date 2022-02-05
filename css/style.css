@@ -196,7 +196,7 @@ input {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "borde-superior borde-superior borde-superior borde-superior der-borde" "izq-borde izq-arriba izq-arriba der-arriba der-borde" "izq-borde izq-abajo centro der-arriba der-borde" "izq-borde izq-abajo der-abajo der-abajo der-borde" "izq-borde borde-inferior borde-inferior borde-inferior borde-inferior";
+  grid-template-areas: "izq-borde borde-superior borde-superior borde-superior der-borde" "izq-borde izq-arriba izq-arriba der-arriba der-borde" "izq-borde izq-abajo centro der-arriba der-borde" "izq-borde izq-abajo der-abajo der-abajo der-borde" "borde-inferior borde-inferior borde-inferior borde-inferior borde-inferior";
   width: 100%;
   height: 100vh; }
   .portada .izq-arriba {
@@ -236,62 +236,68 @@ input {
       padding-top: 2rem;
       transition-duration: 0.5s;
       font-size: 3rem; }
-  .portada .der-borde {
-    writing-mode: vertical-lr; }
-    .portada .der-borde .animacion__borde {
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      animation-name: movimiento;
-      overflow: hidden;
-      transition-timing-function: linear;
-      white-space: nowrap; }
 
-@keyframes movimiento {
+.der-borde {
+  writing-mode: vertical-lr; }
+
+.izq-borde {
+  writing-mode: vertical-lr; }
+
+.animacion__borde {
+  animation-iteration-count: infinite;
+  animation-name: bordeDerecha;
+  animation-duration: 30s;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear; }
+
+@keyframes bordeDerecha {
+  from {
+    margin-top: -83%; }
+  to {
+    margin-top: 100%; } }
+
+.animacion__borde--2 {
+  animation-iteration-count: infinite;
+  animation-name: bordeSuperior;
+  animation-duration: 30s;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear; }
+
+@keyframes bordeSuperior {
+  from {
+    margin-left: -52%; }
+  to {
+    margin-left: 100%; } }
+
+.animacion__borde--3 {
+  animation-iteration-count: infinite;
+  animation-name: bordeIzquierda;
+  animation-duration: 30s;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear; }
+
+@keyframes bordeIzquierda {
   from {
     margin-top: 100%; }
   to {
-    margin-top: 0%; } }
-  .portada .izq-borde {
-    writing-mode: vertical-lr; }
-    .portada .izq-borde .animacion__borde--3 {
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      animation-name: movimientoDos;
-      overflow: hidden;
-      transition-timing-function: linear;
-      white-space: nowrap; }
+    margin-top: -83%; } }
 
-@keyframes movimientoDos {
-  from {
-    margin-top: 0%; }
-  to {
-    margin-top: 100%; } }
-  .portada .borde-superior .animacion__borde--2 {
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    animation-name: movimientoTres;
-    overflow: hidden;
-    white-space: nowrap;
-    transition-timing-function: linear; }
+.animacion__borde--4 {
+  animation-iteration-count: infinite;
+  animation-name: bordeInferior;
+  animation-duration: 30s;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear; }
 
-@keyframes movimientoTres {
+@keyframes bordeInferior {
   from {
     margin-left: 100%; }
   to {
-    margin-left: 0%; } }
-  .portada .borde-inferior .animacion__borde--4 {
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    animation-name: movimientoCuatro;
-    overflow: hidden;
-    white-space: nowrap;
-    transition-timing-function: linear; }
-
-@keyframes movimientoCuatro {
-  from {
-    margin-left: 0%; }
-  to {
-    margin-left: 100%; } }
+    margin-left: -52%; } }
 
 @media (max-width: 768px) {
   .portada {
@@ -502,7 +508,7 @@ input {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      font-size: x-large;
+      font-size: large;
       padding: 0 10px; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div p {
         font-family: 'Open Sans', sans-serif;
@@ -523,7 +529,8 @@ input {
     flex-direction: column; }
     .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
       width: 80vw;
-      height: 100vh; }
+      height: 100vh;
+      font-size: x-large; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div .nuestrasfiestas__img {
         width: 40vw; } }
 
@@ -1200,7 +1207,7 @@ input {
   grid-template-columns: 0.4fr 1fr 0.4fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "banda1 img__fiesta img__fiesta" "banda1 banda2 banda2" "img__fiesta2 img__fiesta2 banda3";
+  grid-template-areas: "banda1 img__fiesta img__fiesta" "banda1 banda2 banda2" "img__fiesta2 img__fiesta2 banda3";
   height: 50rem; }
 
 .fiesta__letra {

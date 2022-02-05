@@ -6,11 +6,11 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "borde-superior borde-superior borde-superior borde-superior der-borde"
+    "izq-borde borde-superior borde-superior borde-superior der-borde"
     "izq-borde izq-arriba izq-arriba der-arriba der-borde"
     "izq-borde izq-abajo centro der-arriba der-borde"
     "izq-borde izq-abajo der-abajo der-abajo der-borde"
-    "izq-borde borde-inferior borde-inferior borde-inferior borde-inferior";
+    "borde-inferior borde-inferior borde-inferior borde-inferior borde-inferior";
   width: 100%;
   height: 100vh;
 
@@ -73,11 +73,87 @@
   writing-mode: vertical-lr;
 }
 
-
 .izq-borde {
   writing-mode: vertical-lr;
 }
 
+
+.animacion__borde{
+  animation-iteration-count:infinite;
+  animation-name: bordeDerecha;
+  animation-duration: 30s;
+  overflow:hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+ 
+
+  @keyframes bordeDerecha {
+    from{
+      margin-top: -83%;
+    }
+    to{
+      margin-top: 100%;
+    }
+  }
+}
+.animacion__borde--2{
+  animation-iteration-count:infinite;
+  animation-name: bordeSuperior;
+  animation-duration: 30s;
+  overflow:hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+ 
+
+  @keyframes bordeSuperior {
+    from{
+      margin-left: -52%;
+    }
+    to{
+      margin-left: 100%;
+    }
+  }
+
+}
+
+.animacion__borde--3{
+  animation-iteration-count:infinite;
+  animation-name: bordeIzquierda;
+  animation-duration: 30s;
+  overflow:hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+ 
+
+  @keyframes bordeIzquierda {
+    from{
+      margin-top: 100%;
+    }
+    to{
+      margin-top: -83%;
+    }
+  }
+}
+
+.animacion__borde--4{
+  animation-iteration-count:infinite;
+  animation-name: bordeInferior;
+  animation-duration: 30s;
+  overflow:hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+ 
+
+  @keyframes bordeInferior {
+    from{
+      margin-left: 100%;
+    }
+    to{
+      margin-left: -52%;
+    }
+  }
+
+}
 
 @media (max-width: 768px) {
   .portada {
