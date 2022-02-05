@@ -137,7 +137,7 @@ ul {
   font-family: "Carter One", cursive; }
 
 .btn-primary:hover {
-  font-size: x-large; }
+  font-size: 1.2rem; }
 
 .btn-check:active + .btn-primary:focus,
 .btn-check:checked + .btn-primary:focus,
@@ -446,6 +446,7 @@ input {
     .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
       background-color: #87d68d;
       color: black;
+      font-weight: 800;
       margin-top: 5rem;
       border: solid 0.1rem black;
       border-radius: 6px;
