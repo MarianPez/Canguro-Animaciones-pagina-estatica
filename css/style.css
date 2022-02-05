@@ -467,9 +467,9 @@ input {
         font-family: "Carter One", cursive; }
       .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div:hover {
         background-color: #fcca46;
-        box-shadow: -4px 3px 5px 0px rgba(156, 156, 156, 0.75);
-        -webkit-box-shadow: -4px 3px 5px 0px rgba(156, 156, 156, 0.75);
-        -moz-box-shadow: -4px 3px 5px 0px rgba(156, 156, 156, 0.75); }
+        box-shadow: -3px 24px 21px 4px rgba(0, 0, 0, 0.54);
+        -webkit-box-shadow: -3px 24px 21px 4px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: -3px 24px 21px 4px rgba(0, 0, 0, 0.54); }
 
 @media (max-width: 768px) {
   .main__nuestrasfiestas .nuestrasfiestas--display__flex {
