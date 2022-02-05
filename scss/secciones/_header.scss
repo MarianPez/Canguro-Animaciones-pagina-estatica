@@ -27,25 +27,17 @@
 
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding-left: 0vw;
-    height: 12rem;
-
-    .header nav {
-      font-size: 3vw;
-      padding-right: 0rem;
+  .header__bootstrap {
+    .nav-item {
+      font-size: large;
     }
   }
 }
 
 @media (max-width: 480px) {
-  .header {
-    height: 9rem;
-  }
-
-  .logo {
-    width: 4rem;
-    padding-top: 1rem;
-  }
+  .header__bootstrap {
+    .nav-item {
+      font-size: medium;
+    }
+}
 }

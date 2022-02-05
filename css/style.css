@@ -324,20 +324,12 @@ input {
     padding-right: 1rem; }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding-left: 0vw;
-    height: 12rem; }
-    .header .header nav {
-      font-size: 3vw;
-      padding-right: 0rem; } }
+  .header__bootstrap .nav-item {
+    font-size: large; } }
 
 @media (max-width: 480px) {
-  .header {
-    height: 9rem; }
-  .logo {
-    width: 4rem;
-    padding-top: 1rem; } }
+  .header__bootstrap .nav-item {
+    font-size: medium; } }
 
 .main {
   display: grid;
@@ -473,6 +465,8 @@ input {
         -moz-box-shadow: -3px 24px 21px 4px rgba(0, 0, 0, 0.54); }
 
 @media (max-width: 768px) {
+  .main__nuestrasfiestas .nuestrasfiestas__titulo {
+    font-size: 9vw; }
   .main__nuestrasfiestas .nuestrasfiestas--display__flex {
     flex-direction: column; }
     .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
@@ -484,7 +478,7 @@ input {
 
 @media (max-width: 480px) {
   .main__nuestrasfiestas .nuestrasfiestas__titulo {
-    font-size: 3rem; }
+    font-size: 10vw; }
   .main__nuestrasfiestas .nuestrasfiestas--display__flex {
     flex-direction: column; }
     .main__nuestrasfiestas .nuestrasfiestas--display__flex .nuestrasfiestas__div {
@@ -590,6 +584,8 @@ input {
     width: 80vw; }
 
 @media (max-width: 768px) {
+  .main__dondeestamos .fuente_dondeestamos {
+    font-size: 9vw; }
   .main__dondeestamos #iframe__dondeestamos {
     height: 80vh; } }
 
@@ -598,6 +594,8 @@ input {
     font-size: 3rem;
     width: 100vw;
     margin-bottom: 0; }
+    .main__dondeestamos .fuente_dondeestamos {
+      font-size: 10vw; }
     .main__dondeestamos .main__dondeestamos h2 {
       font-size: 3rem; }
     .main__dondeestamos .main__dondeestamos iframe {

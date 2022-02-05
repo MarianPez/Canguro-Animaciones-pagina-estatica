@@ -22,6 +22,9 @@
 
 @media (max-width: 768px) {
   .main__dondeestamos {
+    .fuente_dondeestamos {
+      font-size: 9vw;
+    }
     #iframe__dondeestamos {
       height: 80vh;
     }
@@ -34,7 +37,9 @@
     width: 100vw;
     margin-bottom: 0;
 
-
+    .fuente_dondeestamos {
+      font-size: 10vw;
+    }
     .main__dondeestamos h2 {
       font-size: 3rem;
     }

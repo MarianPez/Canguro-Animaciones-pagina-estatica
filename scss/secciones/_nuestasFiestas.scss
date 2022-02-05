@@ -56,6 +56,9 @@
 
 @media (max-width: 768px) {
   .main__nuestrasfiestas {
+    .nuestrasfiestas__titulo {
+      font-size: 9vw;
+    }
     .nuestrasfiestas--display__flex {
       flex-direction: column;
 
@@ -77,7 +80,7 @@
 @media (max-width: 480px) {
   .main__nuestrasfiestas {
     .nuestrasfiestas__titulo {
-      font-size: 3rem;
+      font-size: 10vw;
     }
 
     .nuestrasfiestas--display__flex {
